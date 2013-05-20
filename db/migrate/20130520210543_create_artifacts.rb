@@ -7,6 +7,7 @@ class CreateArtifacts < ActiveRecord::Migration
       t.text :description
       t.string :identifier
       t.references :artifact_type
+      t.references :artifact_status
 
       t.timestamps
     end
@@ -14,5 +15,6 @@ class CreateArtifacts < ActiveRecord::Migration
     add_index :artifacts, :parent_id
     add_index :artifacts, :assignee_id
     add_index :artifacts, :artifact_type_id
+    add_index :artifacts, :artifact_status_id
   end
 end
