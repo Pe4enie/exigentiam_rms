@@ -1,33 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e85398-0baa-459d-a33e-c34c57d81259" name="Default" comment="Tests updated after all manipulations">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
+    <list default="true" id="35e85398-0baa-459d-a33e-c34c57d81259" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/users/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/exigentiam_rms.iml" afterPath="$PROJECT_DIR$/.idea/exigentiam_rms.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/index.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/new.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/new.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/show.html.erb" afterPath="$PROJECT_DIR$/app/views/projects/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exigentiam_rms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369090452365" ignored="false" />
+    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369090938361" ignored="false" />
     <file path="/20130520210152_create_changes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369083919842" ignored="false" />
     <file path="/20130520205351_create_projects.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369084697292" ignored="false" />
     <file path="/artifact.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369086161977" ignored="false" />
@@ -43,7 +24,7 @@
     <file path="/seeds.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369089497140" ignored="false" />
     <file path="/20130520223525_create_users_projects_table.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369089459322" ignored="false" />
     <file path="/application.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369090678930" ignored="false" />
-    <file path="/Gemfile" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369090775986" ignored="false" />
+    <file path="/Gemfile" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369091010519" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,10 +89,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="57" selection-start="814" selection-end="814" vertical-scroll-proportion="0.265625">
+            <state line="13" column="57" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="28" selection-start="299" selection-end="299" vertical-scroll-proportion="0.24665178">
               <folding />
             </state>
           </provider>
@@ -150,8 +140,8 @@
         <option value="$PROJECT_DIR$/db/migrate/20130520223525_create_users_projects_table.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -622,7 +612,11 @@
       <created>1369090433805</created>
       <updated>1369090433805</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Installed bootstrap; generated bootstrap views for main models">
+      <created>1369090940628</created>
+      <updated>1369090940628</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -691,7 +685,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tests updated after all manipulations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Installed bootstrap; generated bootstrap views for main models" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -713,6 +707,7 @@
     <MESSAGE value="Added 'shortening' column to ArtifactType model (finally -_-); added test project in seeds.rb so that initial artifact types and statuses are for this project" />
     <MESSAGE value="Created database table 'UsersProjects' (projects has_many users AND users has_many projects)" />
     <MESSAGE value="Tests updated after all manipulations" />
+    <MESSAGE value="Installed bootstrap; generated bootstrap views for main models" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -809,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="40" selection-start="552" selection-end="552" vertical-scroll-proportion="0.45535713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="91" selection-start="164" selection-end="164" vertical-scroll-proportion="0.099183194">
@@ -825,7 +813,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="57" selection-start="814" selection-end="814" vertical-scroll-proportion="0.265625">
+        <state line="13" column="57" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="299" selection-end="299" vertical-scroll-proportion="0.24665178">
           <folding />
         </state>
       </provider>
