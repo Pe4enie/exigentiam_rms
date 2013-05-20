@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  project: 
+  parent: 
+  assignee: 
+  description: MyText
+  identifier: MyString
+  artifact_type: 
+
+two:
+  project: 
+  parent: 
+  assignee: 
+  description: MyText
+  identifier: MyString
+  artifact_type: 
