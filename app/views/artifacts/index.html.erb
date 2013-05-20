@@ -1,33 +1,48 @@
-<h1>Listing artifacts</h1>
-
-<table>
-  <tr>
-    <th>Project</th>
-    <th>Parent</th>
-    <th>Assignee</th>
-    <th>Description</th>
-    <th>Identifier</th>
-    <th>Artifact type</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @artifacts.each do |artifact| %>
-  <tr>
-    <td><%= artifact.project %></td>
-    <td><%= artifact.parent %></td>
-    <td><%= artifact.assignee %></td>
-    <td><%= artifact.description %></td>
-    <td><%= artifact.identifier %></td>
-    <td><%= artifact.artifact_type %></td>
-    <td><%= link_to 'Show', artifact %></td>
-    <td><%= link_to 'Edit', edit_artifact_path(artifact) %></td>
-    <td><%= link_to 'Destroy', artifact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+<%- model_class = Artifact -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:project_id) %></th>
+      <th><%= model_class.human_attribute_name(:parent_id) %></th>
+      <th><%= model_class.human_attribute_name(:assignee_id) %></th>
+      <th><%= model_class.human_attribute_name(:description) %></th>
+      <th><%= model_class.human_attribute_name(:identifier) %></th>
+      <th><%= model_class.human_attribute_name(:artifact_type_id) %></th>
+      <th><%= model_class.human_attribute_name(:artifact_status_id) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @artifacts.each do |artifact| %>
+      <tr>
+        <td><%= link_to artifact.id, artifact_path(artifact) %></td>
+        <td><%= artifact.project_id %></td>
+        <td><%= artifact.parent_id %></td>
+        <td><%= artifact.assignee_id %></td>
+        <td><%= artifact.description %></td>
+        <td><%= artifact.identifier %></td>
+        <td><%= artifact.artifact_type_id %></td>
+        <td><%= artifact.artifact_status_id %></td>
+        <td><%=l artifact.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_artifact_path(artifact), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      artifact_path(artifact),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
-
-<%= link_to 'New Artifact', new_artifact_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_artifact_path,
+            :class => 'btn btn-primary' %>

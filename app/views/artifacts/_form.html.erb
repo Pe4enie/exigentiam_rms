@@ -1,41 +1,50 @@
-<%= form_for(@artifact) do |f| %>
-  <% if @artifact.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@artifact.errors.count, "error") %> prohibited this artifact from being saved:</h2>
-
-      <ul>
-      <% @artifact.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<%= form_for @artifact, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :project_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :project_id, :class => 'number_field' %>
     </div>
-  <% end %>
+  </div>
+  <div class="control-group">
+    <%= f.label :parent_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :parent_id, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :assignee_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :assignee_id, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :description, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :description, :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :identifier, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :identifier, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :artifact_type_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :artifact_type_id, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :artifact_status_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :artifact_status_id, :class => 'number_field' %>
+    </div>
+  </div>
 
-  <div class="field">
-    <%= f.label :project %><br />
-    <%= f.text_field :project %>
-  </div>
-  <div class="field">
-    <%= f.label :parent %><br />
-    <%= f.text_field :parent %>
-  </div>
-  <div class="field">
-    <%= f.label :assignee %><br />
-    <%= f.text_field :assignee %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :identifier %><br />
-    <%= f.text_field :identifier %>
-  </div>
-  <div class="field">
-    <%= f.label :artifact_type %><br />
-    <%= f.text_field :artifact_type %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                artifacts_path, :class => 'btn' %>
   </div>
 <% end %>
