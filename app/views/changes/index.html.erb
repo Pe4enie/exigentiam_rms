@@ -1,0 +1,37 @@
+<h1>Listing changes</h1>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Artifact</th>
+    <th>User</th>
+    <th>Version</th>
+    <th>Description</th>
+    <th>Artifact type</th>
+    <th>Assigned to user</th>
+    <th>Artifact status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @changes.each do |change| %>
+  <tr>
+    <td><%= change.project %></td>
+    <td><%= change.artifact %></td>
+    <td><%= change.user %></td>
+    <td><%= change.version %></td>
+    <td><%= change.description %></td>
+    <td><%= change.artifact_type %></td>
+    <td><%= change.assigned_to_user %></td>
+    <td><%= change.artifact_status %></td>
+    <td><%= link_to 'Show', change %></td>
+    <td><%= link_to 'Edit', edit_change_path(change) %></td>
+    <td><%= link_to 'Destroy', change, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Change', new_change_path %>

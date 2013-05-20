@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project:</b>
+  <%= @artifact.project %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%= @artifact.parent %>
+</p>
+
+<p>
+  <b>Assignee:</b>
+  <%= @artifact.assignee %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @artifact.description %>
+</p>
+
+<p>
+  <b>Identifier:</b>
+  <%= @artifact.identifier %>
+</p>
+
+<p>
+  <b>Artifact type:</b>
+  <%= @artifact.artifact_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_artifact_path(@artifact) %> |
+<%= link_to 'Back', artifacts_path %>

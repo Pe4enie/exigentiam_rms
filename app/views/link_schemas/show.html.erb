@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project:</b>
+  <%= @link_schema.project %>
+</p>
+
+<p>
+  <b>From type:</b>
+  <%= @link_schema.from_type %>
+</p>
+
+<p>
+  <b>To type:</b>
+  <%= @link_schema.to_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_link_schema_path(@link_schema) %> |
+<%= link_to 'Back', link_schemas_path %>

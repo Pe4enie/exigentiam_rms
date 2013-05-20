@@ -1,0 +1,25 @@
+<h1>Listing artifact_statuses</h1>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @artifact_statuses.each do |artifact_status| %>
+  <tr>
+    <td><%= artifact_status.project %></td>
+    <td><%= artifact_status.title %></td>
+    <td><%= link_to 'Show', artifact_status %></td>
+    <td><%= link_to 'Edit', edit_artifact_status_path(artifact_status) %></td>
+    <td><%= link_to 'Destroy', artifact_status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Artifact status', new_artifact_status_path %>

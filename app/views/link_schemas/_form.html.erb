@@ -1,0 +1,29 @@
+<%= form_for(@link_schema) do |f| %>
+  <% if @link_schema.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@link_schema.errors.count, "error") %> prohibited this link_schema from being saved:</h2>
+
+      <ul>
+      <% @link_schema.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :project %><br />
+    <%= f.text_field :project %>
+  </div>
+  <div class="field">
+    <%= f.label :from_type %><br />
+    <%= f.text_field :from_type %>
+  </div>
+  <div class="field">
+    <%= f.label :to_type %><br />
+    <%= f.text_field :to_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

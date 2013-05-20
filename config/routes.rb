@@ -1,4 +1,31 @@
 ExigentiamRms::Application.routes.draw do
+  resources :comments
+
+
+  resources :artifact_statuses
+
+
+  resources :artifact_types
+
+
+  resources :links
+
+
+  resources :link_schemas
+
+
+  resources :artifacts
+
+
+  resources :changes
+
+
+  resources :projects
+
+
+  resources :users
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

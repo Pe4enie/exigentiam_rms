@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project:</b>
+  <%= @link.project %>
+</p>
+
+<p>
+  <b>From artifact:</b>
+  <%= @link.from_artifact %>
+</p>
+
+<p>
+  <b>To artifact:</b>
+  <%= @link.to_artifact %>
+</p>
+
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>

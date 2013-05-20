@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Project:</b>
+  <%= @change.project %>
+</p>
+
+<p>
+  <b>Artifact:</b>
+  <%= @change.artifact %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @change.user %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @change.version %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @change.description %>
+</p>
+
+<p>
+  <b>Artifact type:</b>
+  <%= @change.artifact_type %>
+</p>
+
+<p>
+  <b>Assigned to user:</b>
+  <%= @change.assigned_to_user %>
+</p>
+
+<p>
+  <b>Artifact status:</b>
+  <%= @change.artifact_status %>
+</p>
+
+
+<%= link_to 'Edit', edit_change_path(@change) %> |
+<%= link_to 'Back', changes_path %>

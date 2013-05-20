@@ -1,0 +1,33 @@
+<h1>Listing artifacts</h1>
+
+<table>
+  <tr>
+    <th>Project</th>
+    <th>Parent</th>
+    <th>Assignee</th>
+    <th>Description</th>
+    <th>Identifier</th>
+    <th>Artifact type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @artifacts.each do |artifact| %>
+  <tr>
+    <td><%= artifact.project %></td>
+    <td><%= artifact.parent %></td>
+    <td><%= artifact.assignee %></td>
+    <td><%= artifact.description %></td>
+    <td><%= artifact.identifier %></td>
+    <td><%= artifact.artifact_type %></td>
+    <td><%= link_to 'Show', artifact %></td>
+    <td><%= link_to 'Edit', edit_artifact_path(artifact) %></td>
+    <td><%= link_to 'Destroy', artifact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Artifact', new_artifact_path %>
