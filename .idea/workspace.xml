@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e85398-0baa-459d-a33e-c34c57d81259" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/artifact_type.rb" afterPath="$PROJECT_DIR$/app/models/artifact_type.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130520223525_create_users_projects_table.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exigentiam_rms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369088691752" ignored="false" />
+    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369089214388" ignored="false" />
     <file path="/20130520210152_create_changes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369083919842" ignored="false" />
     <file path="/20130520205351_create_projects.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369084697292" ignored="false" />
     <file path="/artifact.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369086161977" ignored="false" />
@@ -21,7 +21,8 @@
     <file path="/link_schema.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369085450831" ignored="false" />
     <file path="/project.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369085636710" ignored="false" />
     <file path="/user.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369085996850" ignored="false" />
-    <file path="/seeds.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369089139253" ignored="false" />
+    <file path="/seeds.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369089497140" ignored="false" />
+    <file path="/20130520223525_create_users_projects_table.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369089459322" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,16 @@
       <file leaf-file-name="project.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/project.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="29" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130520223525_create_users_projects_table.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130520223525_create_users_projects_table.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="7" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,7 +126,7 @@
       <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="56" selection-start="698" selection-end="698" vertical-scroll-proportion="0.22767857">
+            <state line="18" column="87" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.34151787">
               <folding />
             </state>
           </provider>
@@ -155,6 +165,7 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/artifact.rb" />
         <option value="$PROJECT_DIR$/app/models/artifact_type.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130520223525_create_users_projects_table.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
@@ -596,7 +607,11 @@
       <created>1369088696156</created>
       <updated>1369088696156</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added 'shortening' column to ArtifactType model (finally -_-); added test project in seeds.rb so that initial artifact types and statuses are for this project">
+      <created>1369089216121</created>
+      <updated>1369089216121</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -665,7 +680,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 'shortening' column to ArtifactType" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 'shortening' column to ArtifactType model (finally -_-); added test project in seeds.rb so that initial artifact types and statuses are for this project" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -684,18 +699,12 @@
     <MESSAGE value="Fixed all (i hope) relations in models and some errors in migrations" />
     <MESSAGE value="Added 'shortening' column to ArtifactType; filled seeds.rb to database initial population" />
     <MESSAGE value="Added 'shortening' column to ArtifactType" />
+    <MESSAGE value="Added 'shortening' column to ArtifactType model (finally -_-); added test project in seeds.rb so that initial artifact types and statuses are for this project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130520210845_create_link_schemas.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="186" selection-end="186" vertical-scroll-proportion="0.094866075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130520211144_create_links.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="33" selection-start="149" selection-end="149" vertical-scroll-proportion="0.07589286">
@@ -766,13 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="75" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130520221629_add_shortening_to_artifact_types.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="52" selection-start="126" selection-end="126" vertical-scroll-proportion="0.03794643">
@@ -787,16 +789,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="75" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/project.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130520223525_create_users_projects_table.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="7" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="56" selection-start="698" selection-end="698" vertical-scroll-proportion="0.22767857">
+        <state line="18" column="87" selection-start="1055" selection-end="1055" vertical-scroll-proportion="0.34151787">
           <folding />
         </state>
       </provider>
