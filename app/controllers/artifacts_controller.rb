@@ -4,7 +4,7 @@ class ArtifactsController < ApplicationController
   def get_list_dependencies
     @types = ArtifactType.where('project_id = ?', session[:project_id])
     @statuses = ArtifactStatus.where('project_id = ?', session[:project_id])
-    @users = User.where('project_id = ?', session[:project_id])
+    @users = User.all(include: :projects, conditions: ['projects.id = ?', session[:project_id]])
   end
 
   # GET /artifacts
