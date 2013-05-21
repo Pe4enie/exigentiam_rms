@@ -5,6 +5,7 @@ class ArtifactsController < ApplicationController
     @types = ArtifactType.where('project_id = ?', session[:project_id])
     @statuses = ArtifactStatus.where('project_id = ?', session[:project_id])
     @users = User.all(include: :projects, conditions: ['projects.id = ?', session[:project_id]])
+    @projects = Project.all(include: :users, conditions: ['users.id = ?', session[:user_id]])
   end
 
   # GET /artifacts
