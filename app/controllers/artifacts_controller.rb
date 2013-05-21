@@ -1,4 +1,12 @@
 class ArtifactsController < ApplicationController
+  before_filter :get_list_dependencies, only: [:new, :edit]
+
+  def get_list_dependencies
+    @types = ArtifactType.where('project_id = ?', session[:project_id])
+    @statuses = ArtifactStatus.where('project_id = ?', session[:project_id])
+    @users = User.where('project_id = ?', session[:project_id])
+  end
+
   # GET /artifacts
   # GET /artifacts.json
   def index
