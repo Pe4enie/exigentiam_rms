@@ -38,7 +38,7 @@
   <div class="control-group">
     <%= f.label :artifact_status_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.number_field :artifact_status_id, :class => 'number_field' %>
+      <%= f.collection_select :artifact_status_id, @statuses, :id, :title, {:prompt => false} %>
     </div>
   </div>
 

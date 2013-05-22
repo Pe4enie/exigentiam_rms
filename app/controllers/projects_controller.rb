@@ -1,8 +1,16 @@
 class ProjectsController < ApplicationController
+
+  def select
+    session[:project_id] = params[:id]
+    respond_to do |format|
+      format.js
+    end
+  end
+
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.all
+    @projects = Project.all(include: :users, conditions: ['users.id = ?', session[:user_id]])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -40,7 +48,10 @@ class ProjectsController < ApplicationController
   # POST /projects
   # POST /projects.json
   def create
+    user = User.find(session[:user_id])
     @project = Project.new(params[:project])
+    @project.administrator = user
+    user.projects << @project
 
     respond_to do |format|
       if @project.save

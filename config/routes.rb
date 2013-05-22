@@ -20,7 +20,11 @@ ExigentiamRms::Application.routes.draw do
   resources :changes
 
 
-  resources :projects
+  resources :projects do
+    member do
+      get 'select'
+    end
+  end
 
 
   resources :users
