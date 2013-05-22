@@ -24,3 +24,10 @@ ArtifactType.create(project_id: '1', title: 'Integration test', shortening: 'INT
 ArtifactType.create(project_id: '1', title: 'Reference', shortening: 'REF')
 
 Project.create(id: '1', administrator_id: '1', name: 'Test project', description: '', maximum_history: '10')
+
+LinkSchema.create(project_id: '1', from_type_id: '6', to_type_id: '3')
+LinkSchema.create(project_id: '1', from_type_id: '3', to_type_id: '7')
+LinkSchema.create(project_id: '1', from_type_id: '3', to_type_id: '2')
+LinkSchema.create(project_id: '1', from_type_id: '5', to_type_id: '2')
+LinkSchema.create(project_id: '1', from_type_id: '2', to_type_id: '1')
+LinkSchema.create(project_id: '1', from_type_id: '4', to_type_id: '1')

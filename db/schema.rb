@@ -11,26 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130521231138) do
+ActiveRecord::Schema.define(:version => 20130522180837) do
 
   create_table "artifact_statuses", :force => true do |t|
-    t.integer  "project_id"
     t.string   "title"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
-  add_index "artifact_statuses", ["project_id"], :name => "index_artifact_statuses_on_project_id"
-
   create_table "artifact_types", :force => true do |t|
-    t.integer  "project_id"
     t.string   "title"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "shortening"
   end
-
-  add_index "artifact_types", ["project_id"], :name => "index_artifact_types_on_project_id"
 
   create_table "artifacts", :force => true do |t|
     t.integer  "project_id"
