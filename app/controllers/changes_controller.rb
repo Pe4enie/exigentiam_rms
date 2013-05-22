@@ -2,7 +2,7 @@ class ChangesController < ApplicationController
   # GET /changes
   # GET /changes.json
   def index
-    @changes = Change.all
+    @changes = Project.find(session[:project_id]).changes
 
     respond_to do |format|
       format.html # index.html.erb

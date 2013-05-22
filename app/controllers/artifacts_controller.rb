@@ -6,8 +6,7 @@ class ArtifactsController < ApplicationController
     @statuses = ArtifactStatus.all
     @users = Project.find(session[:project_id]).users
     @projects = User.find(session[:user_id]).projects
-    @artifacts = Artifact.where('project_id = ?', session[:project_id])
-    #Project.all(include: :users, conditions: ['users.id = ?', session[:user_id]])
+    @artifacts = Artifact.find_all_by_project_id(session[:project_id])
   end
 
   # GET /artifacts

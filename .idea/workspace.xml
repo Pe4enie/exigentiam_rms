@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e85398-0baa-459d-a33e-c34c57d81259" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130522195453_add_parent_to_change.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/artifact.rb" afterPath="$PROJECT_DIR$/app/models/artifact.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/change.rb" afterPath="$PROJECT_DIR$/app/models/change.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/changes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/changes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exigentiam_rms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369249878797" ignored="false" />
+    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369257496934" ignored="false" />
     <file path="/20130520210152_create_changes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369083919842" ignored="false" />
     <file path="/20130520205351_create_projects.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369084697292" ignored="false" />
     <file path="/artifact.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369252864607" ignored="false" />
@@ -30,11 +27,11 @@
     <file path="/application.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369249330312" ignored="false" />
     <file path="/Gemfile" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369091010519" ignored="false" />
     <file path="/application_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369176669274" ignored="false" />
-    <file path="/artifacts_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369252740231" ignored="false" />
+    <file path="/artifacts_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369257579149" ignored="false" />
     <file path="/_form.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369248075240" ignored="false" />
     <file path="/fragment.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369175992235" ignored="false" />
     <file path="/session_store.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369176848302" ignored="false" />
-    <file path="/projects_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369242026907" ignored="false" />
+    <file path="/projects_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369257606710" ignored="false" />
     <file path="/users_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369176965662" ignored="false" />
     <file path="/20130521231138_create_projects_users.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369177916166" ignored="false" />
     <file path="/routes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369235009165" ignored="false" />
@@ -44,6 +41,7 @@
     <file path="/index.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369249700205" ignored="false" />
     <file path="/20130522195322_add_parent_to_change.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369252445178" ignored="false" />
     <file path="/20130522195453_add_parent_to_change.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369252509892" ignored="false" />
+    <file path="/changes_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369257683901" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,37 +88,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/link_schemas/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="87" selection-start="488" selection-end="488" vertical-scroll-proportion="-6.5384617">
+            <state line="6" column="10" selection-start="283" selection-end="283" vertical-scroll-proportion="0.18021202">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="link_schemas_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/link_schemas_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="67" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="projects_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="53" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="artifacts_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="artifacts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/artifacts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="42" selection-start="2509" selection-end="2509" vertical-scroll-proportion="0.5625">
+            <state line="9" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,8 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130522180837_remove_project_id_from_artifact_types.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130522180837_remove_project_id_from_artifact_types_and_statuses.rb" />
         <option value="$PROJECT_DIR$/app/views/projects/select.js.erb" />
         <option value="$PROJECT_DIR$/app/views/link_schemas/_form.html.erb" />
@@ -170,6 +148,8 @@
         <option value="$PROJECT_DIR$/app/models/change.rb" />
         <option value="$PROJECT_DIR$/app/models/artifact.rb" />
         <option value="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/changes_controller.rb" />
       </list>
     </option>
   </component>
@@ -798,7 +778,11 @@
       <created>1369249883260</created>
       <updated>1369249883260</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added parent_id column to change;&#10;actually made history work">
+      <created>1369257500510</created>
+      <updated>1369257500510</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -867,7 +851,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Forced styles for links and link schemas;&#10;fixed default layout;&#10;fixed some issues in artifact and link_schema controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added parent_id column to change;&#10;actually made history work" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -897,6 +881,7 @@
     <MESSAGE value="Finally got HABTM-relation to work; fixed some issues" />
     <MESSAGE value="Removed project_id from ArtifactType and ArtifactStatus;&#10;filled seeds with additional data (default link schema);&#10;" />
     <MESSAGE value="Forced styles for links and link schemas;&#10;fixed default layout;&#10;fixed some issues in artifact and link_schema controllers" />
+    <MESSAGE value="Added parent_id column to change;&#10;actually made history work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -904,55 +889,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="1467" selection-end="1467" vertical-scroll-proportion="0.6891892">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/link_schemas_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="67" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/link_schemas/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="87" selection-start="488" selection-end="488" vertical-scroll-proportion="-6.5384617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="24" selection-start="825" selection-end="825" vertical-scroll-proportion="-7.3846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/artifact_type.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/link_schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="45" selection-start="105" selection-end="105" vertical-scroll-proportion="0.05743243">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/link_schemas/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="63" selection-start="772" selection-end="772" vertical-scroll-proportion="-11.769231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="25" selection-start="34" selection-end="57" vertical-scroll-proportion="0.028716216">
@@ -1011,7 +947,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/artifacts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="42" selection-start="2509" selection-end="2509" vertical-scroll-proportion="0.5625">
+        <state line="9" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/artifact_statuses_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/artifact_types_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/changes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="38" selection-start="371" selection-end="371" vertical-scroll-proportion="0.43074325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/link_schemas_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="67" selection-start="306" selection-end="306" vertical-scroll-proportion="0.28716215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/links_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="33" selection-start="1107" selection-end="1107" vertical-scroll-proportion="1.4932432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/link_schemas/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="10" selection-start="283" selection-end="283" vertical-scroll-proportion="0.18021202">
           <folding />
         </state>
       </provider>

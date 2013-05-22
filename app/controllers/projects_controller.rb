@@ -10,7 +10,7 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
   def index
-    @projects = Project.all(include: :users, conditions: ['users.id = ?', session[:user_id]])
+    @projects = User.find(session[:user_id]).projects
 
     respond_to do |format|
       format.html # index.html.erb
