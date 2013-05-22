@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e85398-0baa-459d-a33e-c34c57d81259" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130522180837_remove_project_id_from_artifact_types_and_statuses.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/link_schemas/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/link_schemas/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/links/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/links/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -17,16 +15,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/link_schemas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/link_schemas_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/link_schemas/new.html.erb" afterPath="$PROJECT_DIR$/app/views/link_schemas/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/links/new.html.erb" afterPath="$PROJECT_DIR$/app/views/links/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/select.js.erb" afterPath="$PROJECT_DIR$/app/views/projects/select.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/link_schemas/show.html.erb" afterPath="$PROJECT_DIR$/app/views/link_schemas/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/links/show.html.erb" afterPath="$PROJECT_DIR$/app/views/links/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exigentiam_rms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369242780974" ignored="false" />
+    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369249844303" ignored="false" />
     <file path="/20130520210152_create_changes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369083919842" ignored="false" />
     <file path="/20130520205351_create_projects.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369084697292" ignored="false" />
     <file path="/artifact.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369246503637" ignored="false" />
@@ -96,7 +91,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/link_schemas/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="10" selection-start="562" selection-end="562" vertical-scroll-proportion="0.45053002">
+            <state line="18" column="63" selection-start="772" selection-end="772" vertical-scroll-proportion="0.54063606">
               <folding />
             </state>
           </provider>
@@ -816,7 +811,11 @@
       <created>1369242782834</created>
       <updated>1369242782834</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Removed project_id from ArtifactType and ArtifactStatus;&#10;filled seeds with additional data (default link schema);&#10;">
+      <created>1369249833354</created>
+      <updated>1369249833354</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -885,7 +884,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finally got HABTM-relation to work; fixed some issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed project_id from ArtifactType and ArtifactStatus;&#10;filled seeds with additional data (default link schema);&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -913,6 +912,7 @@
     <MESSAGE value="Fixed relation between users and projects; fixed query on users by project_id" />
     <MESSAGE value="Some form changes" />
     <MESSAGE value="Finally got HABTM-relation to work; fixed some issues" />
+    <MESSAGE value="Removed project_id from ArtifactType and ArtifactStatus;&#10;filled seeds with additional data (default link schema);&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1027,7 +1027,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/link_schemas/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="10" selection-start="562" selection-end="562" vertical-scroll-proportion="0.45053002">
+        <state line="18" column="63" selection-start="772" selection-end="772" vertical-scroll-proportion="0.54063606">
           <folding />
         </state>
       </provider>

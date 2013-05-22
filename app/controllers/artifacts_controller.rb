@@ -2,16 +2,18 @@ class ArtifactsController < ApplicationController
   before_filter :get_list_dependencies, only: [:new, :edit]
 
   def get_list_dependencies
-    @types = ArtifactType.where('project_id = ?', session[:project_id])
-    @statuses = ArtifactStatus.where('project_id = ?', session[:project_id])
-    @users = User.all(include: :projects, conditions: ['projects.id = ?', session[:project_id]])
-    @projects = Project.all(include: :users, conditions: ['users.id = ?', session[:user_id]])
+    @types = ArtifactType.all
+    @statuses = ArtifactStatus.all
+    @users = Project.find(session[:project_id]).users
+    @projects = User.find(session[:user_id]).projects
+    @artifacts = Artifact.where('project_id = ?', session[:project_id])
+    #Project.all(include: :users, conditions: ['users.id = ?', session[:user_id]])
   end
 
   # GET /artifacts
   # GET /artifacts.json
   def index
-    @artifacts = Artifact.all
+    @artifacts = Artifact.where('project_id = ?', session[:project_id])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -50,6 +52,7 @@ class ArtifactsController < ApplicationController
   # POST /artifacts.json
   def create
     @artifact = Artifact.new(params[:artifact])
+    @artifact.project_id = session[:project_id]
 
     respond_to do |format|
       if @artifact.save
@@ -60,6 +63,9 @@ class ArtifactsController < ApplicationController
         format.json { render json: @artifact.errors, status: :unprocessable_entity }
       end
     end
+
+    @artifact.identifier = @artifact.artifact_type.shortening + '-' + @artifact.id.to_s
+    @artifact.save
   end
 
   # PUT /artifacts/1

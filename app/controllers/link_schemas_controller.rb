@@ -1,8 +1,14 @@
 class LinkSchemasController < ApplicationController
+  before_filter :get_list_dependencies, only: [:new, :edit]
+
+  def get_list_dependencies
+    @types = ArtifactType.all
+  end
+
   # GET /link_schemas
   # GET /link_schemas.json
   def index
-    @link_schemas = LinkSchema.all
+    @link_schemas = Project.find(session[:project_id]).link_schemas
 
     respond_to do |format|
       format.html # index.html.erb

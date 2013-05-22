@@ -28,15 +28,22 @@
                 <b class="caret"></b>
               </a>
               <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                <% Project.all(include: :users, conditions: ['users.id = ?', session[:user_id]]).each do |p| %>
-                    <li><%= link_to p.name, select_project_path(p), remote: true, 'role' => 'menuitem', 'tabindex' => '-1' %></li>
+                <% User.find(session[:user_id]).projects.each do |p| %>
+                    <% if p == Project.find(session[:project_id]) %>
+                        <li class="disabled"><a role="menuitem" tabindex="-1" data-target="#"><%= p.name %></a></li>
+                    <% else %>
+                        <li><%= link_to p.name, select_project_path(p), remote: true, 'role' => 'menuitem', 'tabindex' => '-1' %></li>
+                    <% end %>
                 <% end %>
                 <li class="divider"></li>​
                 <li><%= link_to "Create project", new_project_path %></li>
               </ul>
           </li>
           <li><%= link_to 'Artifacts', artifacts_path %></li>
-          <li><%= link_to 'Users', users_path %></li>
+          <% if Project.find(session[:project_id]).administrator == User.find(session[:user_id]) %>
+              <li><%= link_to 'Link Schemas', link_schemas_path %></li>
+              <li><%= link_to 'Users', users_path %></li>
+          <% end %>
         </ul>
       </div>
     </div>

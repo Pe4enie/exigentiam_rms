@@ -1,27 +1,40 @@
-<h1>Listing links</h1>
-
-<table>
-  <tr>
-    <th>Project</th>
-    <th>From artifact</th>
-    <th>To artifact</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @links.each do |link| %>
-  <tr>
-    <td><%= link.project %></td>
-    <td><%= link.from_artifact %></td>
-    <td><%= link.to_artifact %></td>
-    <td><%= link_to 'Show', link %></td>
-    <td><%= link_to 'Edit', edit_link_path(link) %></td>
-    <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+<%- model_class = Link -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:project_id) %></th>
+      <th><%= model_class.human_attribute_name(:from_artifact_id) %></th>
+      <th><%= model_class.human_attribute_name(:to_artifact_id) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @links.each do |link| %>
+      <tr>
+        <td><%= link_to link.id, link_path(link) %></td>
+        <td><%= link.project_id %></td>
+        <td><%= link.from_artifact_id %></td>
+        <td><%= link.to_artifact_id %></td>
+        <td><%=l link.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_link_path(link), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      link_path(link),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
-
-<%= link_to 'New Link', new_link_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_link_path,
+            :class => 'btn btn-primary' %>

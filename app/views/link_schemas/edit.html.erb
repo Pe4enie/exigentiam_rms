@@ -1,6 +1,5 @@
-<h1>Editing link_schema</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @link_schema %> |
-<%= link_to 'Back', link_schemas_path %>
+<%- model_class = LinkSchema -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human %></h1>
+</div>
+<%= render :partial => 'form' %>
