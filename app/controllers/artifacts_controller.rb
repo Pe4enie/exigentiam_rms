@@ -54,8 +54,11 @@ class ArtifactsController < ApplicationController
     @artifact = Artifact.new(params[:artifact])
     @artifact.project_id = session[:project_id]
 
+    change = copy_to_change(@artifact)
+    change.version = 1
+
     respond_to do |format|
-      if @artifact.save
+      if @artifact.save && change.save
         format.html { redirect_to @artifact, notice: 'Artifact was successfully created.' }
         format.json { render json: @artifact, status: :created, location: @artifact }
       else
@@ -66,6 +69,19 @@ class ArtifactsController < ApplicationController
 
     @artifact.identifier = @artifact.artifact_type.shortening + '-' + @artifact.id.to_s
     @artifact.save
+  end
+
+  def copy_to_change(artifact)
+    change = Change.new
+    change.project = artifact.project
+    change.artifact = artifact
+    change.changer = User.find(session[:user_id])
+    change.artifact_type = artifact.artifact_type
+    change.assignee = artifact.assignee
+    change.artifact_status = artifact.artifact_status
+    change.description = artifact.description
+    change.parent = artifact.parent
+    return change
   end
 
   # PUT /artifacts/1
@@ -82,6 +98,10 @@ class ArtifactsController < ApplicationController
         format.json { render json: @artifact.errors, status: :unprocessable_entity }
       end
     end
+
+    change = copy_to_change(@artifact)
+    change.version = Change.find_last_by_artifact_id(params[:id]).version + 1
+    change.save
   end
 
   # DELETE /artifacts/1

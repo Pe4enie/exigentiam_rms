@@ -2,19 +2,19 @@
   <!--div class="control-group">
     <%= f.label :project_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.collection_select :project_id, @projects, :id, :name, {:prompt => false} %>
+      <%= f.collection_select :project_id, @projects, :id, :name, {prompt: false} %>
     </div>
   </div-->
   <div class="control-group">
     <%= f.label :parent_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.collection_select :parent_id, @artifacts, :id, :description %>
+      <%= f.collection_select :parent_id, @artifacts, :id, :description, {include_blank: true} %>
     </div>
   </div>
   <div class="control-group">
     <%= f.label :assignee_id, :class => 'control-label' %>
     <div class="controls">
-      <%= f.collection_select :assignee_id, @users, :id, :name, {:prompt => false} %>
+      <%= f.collection_select :assignee_id, @users, :id, :name, {prompt: false} %>
     </div>
   </div>
   <div class="control-group">
