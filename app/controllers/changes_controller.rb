@@ -1,4 +1,9 @@
 class ChangesController < ApplicationController
+
+  def compare_changes
+    redirect_to session[:return_to]
+  end
+
   # GET /changes
   # GET /changes.json
   def index

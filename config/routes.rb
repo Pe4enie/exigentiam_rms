@@ -14,10 +14,18 @@ ExigentiamRms::Application.routes.draw do
   resources :link_schemas
 
 
-  resources :artifacts
+  resources :artifacts do
+    member do
+      get 'history'
+    end
+  end
 
 
-  resources :changes
+  resources :changes do
+    collection do
+      get 'compare'
+    end
+  end
 
 
   resources :projects do

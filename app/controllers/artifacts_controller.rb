@@ -70,6 +70,29 @@ class ArtifactsController < ApplicationController
     @artifact.save
   end
 
+  def history
+    @artifact = Artifact.find(params[:id])
+    session[:return_to] ||= request.referer
+    @changes = Change.find_all_by_artifact_id(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @artifact }
+    end
+  end
+
+  def has_changes(old, new)
+    if old.project != new.project ||
+        old.artifact_type != new.artifact_type ||
+        old.assignee != new.assignee ||
+        old.artifact_status != new.artifact_status ||
+        old.description != new.description ||
+        old.parent != new.parent
+      return true
+    end
+    return false
+  end
+
   def copy_to_change(artifact)
     change = Change.new
     change.project = artifact.project
@@ -87,6 +110,7 @@ class ArtifactsController < ApplicationController
   # PUT /artifacts/1.json
   def update
     @artifact = Artifact.find(params[:id])
+    previous = Artifact.find(params[:id])
 
     respond_to do |format|
       if @artifact.update_attributes(params[:artifact])
@@ -98,9 +122,12 @@ class ArtifactsController < ApplicationController
       end
     end
 
-    change = copy_to_change(@artifact)
-    change.version = Change.find_last_by_artifact_id(params[:id]).version + 1
-    change.save
+    if has_changes(previous, @artifact)
+      @artifact.update_attribute(:identifier, @artifact.artifact_type.shortening + '-' + @artifact.id.to_s)
+      change = copy_to_change(@artifact)
+      change.version = Change.find_last_by_artifact_id(params[:id]).version + 1
+      change.save
+    end
   end
 
   # DELETE /artifacts/1
