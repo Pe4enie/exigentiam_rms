@@ -127,6 +127,10 @@ class ArtifactsController < ApplicationController
       change = copy_to_change(@artifact)
       change.version = Change.find_last_by_artifact_id(params[:id]).version + 1
       change.save
+      changes = Change.find_all_by_artifact_id(params[:id])
+      if changes.count > 10
+        changes.first.delete
+      end
     end
   end
 

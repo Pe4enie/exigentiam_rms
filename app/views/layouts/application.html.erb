@@ -19,30 +19,65 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="#">Exigentiam</a>
+      <a class="brand" data-target="#" href="projects">Exigentiam</a>
       <div class="nav-collapse">
         <ul class="nav">
-          <li class="dropdown">
-              <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="<% projects_path %>">
-                Projects
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-                <% User.find(session[:user_id]).projects.each do |p| %>
-                    <% if p == Project.find(session[:project_id]) %>
-                        <li class="disabled"><a role="menuitem" tabindex="-1" data-target="#"><%= p.name %></a></li>
-                    <% else %>
-                        <li><%= link_to p.name, select_project_path(p), remote: true, 'role' => 'menuitem', 'tabindex' => '-1' %></li>
+          <% if session[:user_id] %>
+              <li class="dropdown">
+                  <a class="dropdown-toggle" id="dLabel1" role="button" data-toggle="dropdown" data-target="#" href="<% projects_path %>">
+                    Projects
+                    <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
+                    <% User.find(session[:user_id]).projects.each do |p| %>
+                        <% if p == Project.find(session[:project_id]) %>
+                            <li class="disabled"><a role="menuitem" tabindex="-1" data-target="#"><%= p.name %></a></li>
+                        <% else %>
+                            <li><%= link_to p.name, select_project_path(p), remote: true, 'role' => 'menuitem', 'tabindex' => '-1' %></li>
+                        <% end %>
                     <% end %>
-                <% end %>
-                <li class="divider"></li>​
-                <li><%= link_to "Create project", new_project_path %></li>
-              </ul>
-          </li>
-          <li><%= link_to 'Artifacts', artifacts_path %></li>
-          <% if Project.find(session[:project_id]).administrator == User.find(session[:user_id]) %>
-              <li><%= link_to 'Link Schemas', link_schemas_path %></li>
-              <li><%= link_to 'Users', users_path %></li>
+                    <li class="divider"></li>​
+                    <li><%= link_to 'Create project', new_project_path %></li>
+                  </ul>
+              </li>
+              <li><%= link_to 'Artifacts', artifacts_path %></li>
+              <% if Project.find(session[:project_id]).administrator == User.find(session[:user_id]) %>
+                <li><%= link_to 'Link Schemas', link_schemas_path %></li>
+                <li><%= link_to 'Users', users_path %></li>
+              <% end %>
+          <% end %>
+        </ul>
+        <ul class="nav pull-right">
+          <% if session[:user_id] %>
+              <li class="dropdown">
+                <a class="dropdown-toggle" id="dLabel2" role="button" data-toggle="dropdown" data-target="#" href="<% users_path %>">
+                  <%= User.find(session[:user_id]).name %>
+                  <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel2">
+                  <li><%= link_to 'Logout', logout_user_path(User.find(session[:user_id])), 'role' => 'menuitem', 'tabindex' => '-1' %></li>
+                </ul>
+              </li>
+          <% else %>
+              <li class="dropdown">
+                <a class="dropdown-toggle" id="dLabel2" role="button" data-toggle="dropdown" data-target="#" href="<% users_path %>">
+                  Sign in
+                  <b class="caret"></b>
+                </a>
+                <form action="" class="navbar-form">
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel2">
+                      <li>
+                        <input name="login" type="email" class="span2" role="menuitem" placeholder="Login">
+                      </li>
+                      <li>
+                        <input name="password" type="password" class="span2" role="menuitem" placeholder="Password">
+                      </li>
+                      <li>
+                        <button role="menuitem" type="submit" class="btn">Login</button>
+                      </li>
+                    </ul>
+                </form>
+              </li>
           <% end %>
         </ul>
       </div>

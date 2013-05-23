@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35e85398-0baa-459d-a33e-c34c57d81259" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/artifacts/history.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130523155852_add_devise_to_users.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/artifact.rb" afterPath="$PROJECT_DIR$/app/models/artifact.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/changes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/changes_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/exigentiam_rms.iml" afterPath="$PROJECT_DIR$/.idea/exigentiam_rms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/history.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/history.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exigentiam_rms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369257758748" ignored="false" />
+    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369320436029" ignored="false" />
     <file path="/20130520210152_create_changes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369083919842" ignored="false" />
     <file path="/20130520205351_create_projects.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369084697292" ignored="false" />
     <file path="/artifact.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369311830865" ignored="false" />
@@ -28,17 +34,17 @@
     <file path="/user.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369085996850" ignored="false" />
     <file path="/seeds.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369248152032" ignored="false" />
     <file path="/20130520223525_create_users_projects_table.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369089459322" ignored="false" />
-    <file path="/application.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369249330312" ignored="false" />
-    <file path="/Gemfile" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369091010519" ignored="false" />
+    <file path="/application.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369323349320" ignored="false" />
+    <file path="/Gemfile" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369324059851" ignored="false" />
     <file path="/application_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369176669274" ignored="false" />
-    <file path="/artifacts_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369312921242" ignored="false" />
-    <file path="/_form.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369248075240" ignored="false" />
+    <file path="/artifacts_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369320829053" ignored="false" />
+    <file path="/_form.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369320903194" ignored="false" />
     <file path="/fragment.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369175992235" ignored="false" />
     <file path="/session_store.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369176848302" ignored="false" />
     <file path="/projects_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369257606710" ignored="false" />
-    <file path="/users_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369176965662" ignored="false" />
+    <file path="/users_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369323250848" ignored="false" />
     <file path="/20130521231138_create_projects_users.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369177916166" ignored="false" />
-    <file path="/routes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369319912209" ignored="false" />
+    <file path="/routes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369324723943" ignored="false" />
     <file path="/select.js.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369237089322" ignored="false" />
     <file path="/20130522180837_remove_project_id_from_artifact_types.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369246260664" ignored="false" />
     <file path="/link_schemas_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369249151873" ignored="false" />
@@ -46,7 +52,8 @@
     <file path="/20130522195322_add_parent_to_change.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369252445178" ignored="false" />
     <file path="/20130522195453_add_parent_to_change.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369252509892" ignored="false" />
     <file path="/changes_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369320273670" ignored="false" />
-    <file path="/history.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369320276398" ignored="false" />
+    <file path="/history.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369321089657" ignored="false" />
+    <file path="/devise.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369324320521" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,82 +73,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/projects/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="68" selection-start="818" selection-end="818" vertical-scroll-proportion="-14.384615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="11" selection-start="3009" selection-end="3009" vertical-scroll-proportion="-16.538462">
+            <state line="65" column="20" selection-start="3182" selection-end="3182" vertical-scroll-proportion="-9.192307">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/link_schemas/index.html.erb">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="63" selection-start="772" selection-end="772" vertical-scroll-proportion="-11.769231">
+            <state line="26" column="20" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/artifacts/index.html.erb">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="76" selection-start="849" selection-end="849" vertical-scroll-proportion="-10.461538">
+            <state line="11" column="45" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/link_schemas/_form.html.erb">
+      <file leaf-file-name="20130523155852_add_devise_to_users.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130523155852_add_devise_to_users.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="78" selection-start="479" selection-end="479" vertical-scroll-proportion="-6.5384617">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="artifacts_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/artifacts_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="43" selection-start="1998" selection-end="1998" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/artifacts/history.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="50" selection-start="462" selection-end="462" vertical-scroll-proportion="0.30035335">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="changes_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/changes_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="21" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="change.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/change.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="52" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
+            <state line="50" column="4" selection-start="1785" selection-end="1785" vertical-scroll-proportion="0.94866073">
               <folding />
             </state>
           </provider>
@@ -166,22 +128,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/link_schema.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/link_schemas_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/link_schemas/index.html.erb" />
         <option value="$PROJECT_DIR$/db/migrate/20130522195322_add_parent_to_change.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130522195453_add_parent_to_change.rb" />
-        <option value="$PROJECT_DIR$/app/views/artifacts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/change.rb" />
         <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/artifact.rb" />
         <option value="$PROJECT_DIR$/app/views/artifacts/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/changes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/artifacts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/artifacts/history.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -286,7 +248,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exigentiam_rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exigentiam_rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -837,7 +817,11 @@
       <created>1369257775546</created>
       <updated>1369257775546</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Made history for artifacts">
+      <created>1369320441561</created>
+      <updated>1369320441561</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -854,7 +838,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991323" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329718" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -906,7 +890,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved queries so that they become faster" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made history for artifacts" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -938,6 +922,7 @@
     <MESSAGE value="Forced styles for links and link schemas;&#10;fixed default layout;&#10;fixed some issues in artifact and link_schema controllers" />
     <MESSAGE value="Added parent_id column to change;&#10;actually made history work" />
     <MESSAGE value="Improved queries so that they become faster" />
+    <MESSAGE value="Made history for artifacts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -945,37 +930,23 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/artifact_types_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/link_schemas_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="67" selection-start="306" selection-end="306" vertical-scroll-proportion="0.28716215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/links_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="33" selection-start="1107" selection-end="1107" vertical-scroll-proportion="1.4932432">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/link_schemas/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="78" selection-start="479" selection-end="479" vertical-scroll-proportion="-6.5384617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/artifacts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="58" selection-start="619" selection-end="619" vertical-scroll-proportion="-9.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/artifacts/history.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="22" selection-start="1274" selection-end="1274" vertical-scroll-proportion="-17.653847">
           <folding />
         </state>
       </provider>
@@ -987,72 +958,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_view/helpers/translation_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/projects/select.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="13" selection-start="2951" selection-end="2951" vertical-scroll-proportion="0.6773649">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/change.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="52" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/artifact.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="122" selection-start="526" selection-end="526" vertical-scroll-proportion="0.28716215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="11" selection-start="3009" selection-end="3009" vertical-scroll-proportion="-16.538462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.2.12/lib/rails.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="8" selection-start="2906" selection-end="2906" vertical-scroll-proportion="0.5692568">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/artifacts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="76" selection-start="849" selection-end="849" vertical-scroll-proportion="-10.461538">
+        <state line="20" column="28" selection-start="665" selection-end="665" vertical-scroll-proportion="0.6238532">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/artifacts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="43" selection-start="1998" selection-end="1998" vertical-scroll-proportion="0.0">
+        <state line="16" column="0" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="12" selection-start="534" selection-end="534" vertical-scroll-proportion="0.5831874">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/projects/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="68" selection-start="818" selection-end="818" vertical-scroll-proportion="-14.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="20" selection-start="3182" selection-end="3182" vertical-scroll-proportion="-9.192307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="20" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="36" selection-start="5890" selection-end="5890" vertical-scroll-proportion="-1.827009">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="729" selection-end="729" vertical-scroll-proportion="0.34151787">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="6" selection-start="302" selection-end="302" vertical-scroll-proportion="0.33274958">
+        <state line="21" column="13" selection-start="267" selection-end="267" vertical-scroll-proportion="0.34151787">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/changes_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+        <state line="11" column="45" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/artifacts/history.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130523155852_add_devise_to_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="50" selection-start="462" selection-end="462" vertical-scroll-proportion="0.30035335">
+        <state line="50" column="4" selection-start="1785" selection-end="1785" vertical-scroll-proportion="0.94866073">
           <folding />
         </state>
       </provider>

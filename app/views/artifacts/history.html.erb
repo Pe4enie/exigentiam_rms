@@ -10,6 +10,7 @@
       <th><%= model_class.human_attribute_name(:artifact_type_id) %></th>
       <th><%= model_class.human_attribute_name(:artifact_status_id) %></th>
       <th><%= model_class.human_attribute_name(:assignee_id) %></th>
+      <th><%= model_class.human_attribute_name(:changer_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <!--th><%=t '.actions', :default => t('helpers.actions') %></th-->
     </tr>
@@ -22,6 +23,7 @@
         <td><%= ArtifactType.find(change.artifact_type_id).title %></td>
         <td><%= ArtifactStatus.find(change.artifact_status_id).title %></td>
         <td><%= User.find(change.assignee_id).name %></td>
+        <td><%= User.find(change.changer_id).name %></td>
         <td><%=l change.created_at, format: :short %></td>
         <!--td></td-->
       </tr>
