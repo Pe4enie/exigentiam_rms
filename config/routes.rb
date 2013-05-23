@@ -1,7 +1,7 @@
 ExigentiamRms::Application.routes.draw do
-  devise_for :users
+  root to: 'application#index'
 
-  root to: 'artifact#index'
+  devise_for :users
 
   resources :comments
 

@@ -19,17 +19,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" data-target="#" href="projects">Exigentiam</a>
+      <a class="brand" data-target="#" href="<%= root_path %>">Exigentiam</a>
       <div class="nav-collapse">
         <ul class="nav">
-          <% if session[:user_id] %>
+          <% if user_signed_in? %>
               <li class="dropdown">
                   <a class="dropdown-toggle" id="dLabel1" role="button" data-toggle="dropdown" data-target="#" href="<% projects_path %>">
                     Projects
                     <b class="caret"></b>
                   </a>
                   <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
-                    <% User.find(session[:user_id]).projects.each do |p| %>
+                    <% current_user.projects.each do |p| %>
                         <% if p == Project.find(session[:project_id]) %>
                             <li class="disabled"><a role="menuitem" tabindex="-1" data-target="#"><%= p.name %></a></li>
                         <% else %>
@@ -41,26 +41,33 @@
                   </ul>
               </li>
               <li><%= link_to 'Artifacts', artifacts_path %></li>
-              <% if Project.find(session[:project_id]).administrator == User.find(session[:user_id]) %>
+              <% if Project.find(session[:project_id]).administrator == current_user %>
                 <li><%= link_to 'Link Schemas', link_schemas_path %></li>
                 <li><%= link_to 'Users', users_path %></li>
               <% end %>
           <% end %>
         </ul>
         <ul class="nav pull-right">
-          <% if session[:user_id] %>
+          <% if user_signed_in?  %>
+              <li><%= link_to current_user.email, edit_user_registration_path %></li>
+              <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+          <% else %>
+              <li><%= link_to 'Sign up', new_user_registration_path %></li>
+              <li><%= link_to 'Login', new_user_session_path %></li>
+          <% end %>
+          <!--% if session[:user_id] %>
               <li class="dropdown">
-                <a class="dropdown-toggle" id="dLabel2" role="button" data-toggle="dropdown" data-target="#" href="<% users_path %>">
-                  <%= User.find(session[:user_id]).name %>
+                <a class="dropdown-toggle" id="dLabel2" role="button" data-toggle="dropdown" data-target="#" href="<#% users_path %>">
+                  <#%= User.find(session[:user_id]).name %>
                   <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel2">
-                  <li><%= link_to 'Logout', logout_user_path(User.find(session[:user_id])), 'role' => 'menuitem', 'tabindex' => '-1' %></li>
+                  <li><#%= link_to 'Logout', logout_user_path(User.find(session[:user_id])), 'role' => 'menuitem', 'tabindex' => '-1' %></li>
                 </ul>
               </li>
-          <% else %>
+          <#% else %>
               <li class="dropdown">
-                <a class="dropdown-toggle" id="dLabel2" role="button" data-toggle="dropdown" data-target="#" href="<% users_path %>">
+                <a class="dropdown-toggle" id="dLabel2" role="button" data-toggle="dropdown" data-target="#" href="<#% users_path %>">
                   Sign in
                   <b class="caret"></b>
                 </a>
@@ -78,7 +85,7 @@
                     </ul>
                 </form>
               </li>
-          <% end %>
+          <#% end %-->
         </ul>
       </div>
     </div>
