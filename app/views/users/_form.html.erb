@@ -12,9 +12,9 @@
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :password, :class => 'control-label' %>
+    <%= f.label :projects, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :password, :class => 'text_field' %>
+      <%= f.select :project_ids, Project.all.collect {|x| [x.name, x.id]}, {}, multiple: true %>
     </div>
   </div>
 

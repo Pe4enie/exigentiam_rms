@@ -1,4 +1,5 @@
 class ChangesController < ApplicationController
+  before_filter :authenticate_user!
 
   def compare_changes
     redirect_to session[:return_to]

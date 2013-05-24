@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_filter :authenticate_user!
+
   # GET /users
   # GET /users.json
   def index
@@ -57,13 +59,27 @@ class UsersController < ApplicationController
   # PUT /users/1.json
   def update
     @user = User.find(params[:id])
+    @user.name = params[:user][:name]
+    @user.email = params[:user][:email]
+
+
+    if params[:user][:project_ids].empty?
+      @user.projects.clear
+    else
+      @user.projects.clear
+      params[:user][:project_ids].each do |p_id|
+        if !p_id.to_s.empty?
+          @user.projects << Project.find(p_id)
+        end
+      end
+    end
 
     respond_to do |format|
-      if @user.update_attributes(params[:user])
+      if @user.save
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: "edit" }
+        format.html { render action: 'edit' }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end

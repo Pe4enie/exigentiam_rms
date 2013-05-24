@@ -1,5 +1,6 @@
 class ArtifactsController < ApplicationController
   before_filter :get_list_dependencies, only: [:new, :edit]
+  before_filter :authenticate_user!
 
   def get_list_dependencies
     @types = ArtifactType.all
