@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130523155852) do
+ActiveRecord::Schema.define(:version => 20130524172348) do
 
   create_table "artifact_statuses", :force => true do |t|
     t.string   "title"
@@ -43,6 +43,19 @@ ActiveRecord::Schema.define(:version => 20130523155852) do
   add_index "artifacts", ["assignee_id"], :name => "index_artifacts_on_assignee_id"
   add_index "artifacts", ["parent_id"], :name => "index_artifacts_on_parent_id"
   add_index "artifacts", ["project_id"], :name => "index_artifacts_on_project_id"
+
+  create_table "attachments", :force => true do |t|
+    t.integer  "project_id"
+    t.integer  "artifact_id"
+    t.integer  "user_id"
+    t.string   "file"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "attachments", ["artifact_id"], :name => "index_attachments_on_artifact_id"
+  add_index "attachments", ["project_id"], :name => "index_attachments_on_project_id"
+  add_index "attachments", ["user_id"], :name => "index_attachments_on_user_id"
 
   create_table "changes", :force => true do |t|
     t.integer  "project_id"

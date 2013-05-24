@@ -8,5 +8,6 @@ class Project < ActiveRecord::Base
   has_many :artifact_types
   has_many :artifact_statuses
   has_many :comments
+  has_many :attachments
   attr_accessible :description, :maximum_history, :name
 end

@@ -36,8 +36,10 @@
                             <li><%= link_to p.name, select_project_path(p), remote: true, 'role' => 'menuitem', 'tabindex' => '-1' %></li>
                         <% end %>
                     <% end %>
-                    <li class="divider"></li>​
-                    <li><%= link_to 'Create project', new_project_path %></li>
+                    <% if Project.find(session[:project_id]).administrator == current_user %>
+                        <li class="divider"/>​
+                        <li><%= link_to 'Create project', new_project_path %></li>
+                    <% end %>
                   </ul>
               </li>
               <li><%= link_to 'Artifacts', artifacts_path %></li>

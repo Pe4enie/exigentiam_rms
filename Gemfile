@@ -12,17 +12,21 @@ gem 'thin'
 # in production environments by default.
 group :assets do
   gem 'less-rails-bootstrap'
+  #gem 'sass-rails'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer'
-  gem 'twitter-bootstrap-rails'
+  gem 'execjs'
+
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
-
+gem 'jquery-fileupload-rails'
 gem 'devise'
+gem 'carrierwave'
+gem 'twitter-bootstrap-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

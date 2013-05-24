@@ -8,5 +8,6 @@ class Artifact < ActiveRecord::Base
   has_many :incoming_links, class_name: 'Link', foreign_key: 'to_artifact_id'
   has_many :outcoming_links, class_name: 'Link', foreign_key: 'from_artifact_id'
   has_many :comments
+  has_many :attachments
   attr_accessible :description, :identifier, :assignee_id, :artifact_type_id, :artifact_status_id, :parent_id, :project_id
 end

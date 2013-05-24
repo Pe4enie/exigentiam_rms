@@ -11,5 +11,6 @@ class User < ActiveRecord::Base
   has_many :comments, foreign_key: 'owner_id'
   has_many :changed_list, class_name: 'Change', foreign_key: 'changer_id'
   has_many :assigned_list, class_name: 'Change', foreign_key: 'assignee_id'
+  has_many :attachments
   attr_accessible :email, :name, :password, :password_confirmation, :remember_me
 end
