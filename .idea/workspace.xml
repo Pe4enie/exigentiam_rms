@@ -6,7 +6,7 @@
     </list>
     <ignored path="exigentiam_rms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369524879726" ignored="false" />
+    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369524924034" ignored="false" />
     <file path="/20130520210152_create_changes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369083919842" ignored="false" />
     <file path="/20130520205351_create_projects.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369084697292" ignored="false" />
     <file path="/artifact.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369495160435" ignored="false" />
@@ -821,7 +821,11 @@
       <created>1369524881684</created>
       <updated>1369524881684</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Implemented links between artifacts">
+      <created>1369524926945</created>
+      <updated>1369524926945</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
