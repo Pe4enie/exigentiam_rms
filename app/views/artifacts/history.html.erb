@@ -19,7 +19,7 @@
     <% @changes.each do |change| %>
       <tr>
         <td><%= change.version %></td>
-        <td><%= change.description %></td>
+        <td width="500px"><%= change.description %></td>
         <td><%= ArtifactType.find(change.artifact_type_id).title %></td>
         <td><%= ArtifactStatus.find(change.artifact_status_id).title %></td>
         <td><%= User.find(change.assignee_id).name %></td>

@@ -21,6 +21,8 @@ ExigentiamRms::Application.routes.draw do
   resources :artifacts do
     member do
       get 'history'
+      get 'link'
+      get 'links'
     end
   end
 

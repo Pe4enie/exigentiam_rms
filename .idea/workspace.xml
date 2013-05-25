@@ -1,52 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e85398-0baa-459d-a33e-c34c57d81259" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/attachment_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/attachments.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/attachments_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/attachments_helper.rb" />
+    <list default="true" id="35e85398-0baa-459d-a33e-c34c57d81259" name="Default" comment="Added attachments generated files">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/artifacts/links.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/exigentiam_rms.iml" afterPath="$PROJECT_DIR$/.idea/exigentiam_rms.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/history.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/history.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/link.rb" afterPath="$PROJECT_DIR$/app/models/link.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/artifacts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/artifacts/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exigentiam_rms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369428678620" ignored="false" />
+    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369481517573" ignored="false" />
     <file path="/20130520210152_create_changes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369083919842" ignored="false" />
     <file path="/20130520205351_create_projects.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369084697292" ignored="false" />
-    <file path="/artifact.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369416322212" ignored="false" />
+    <file path="/artifact.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369495160435" ignored="false" />
     <file path="/20130520210543_create_artifacts.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369085088433" ignored="false" />
     <file path="/artifact_status.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369085109425" ignored="false" />
     <file path="/artifact_type.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369088727259" ignored="false" />
     <file path="/change.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369252788967" ignored="false" />
     <file path="/comment.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369085325553" ignored="false" />
-    <file path="/link.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369085368902" ignored="false" />
+    <file path="/link.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369515433611" ignored="false" />
     <file path="/link_schema.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369248350335" ignored="false" />
     <file path="/project.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369085636710" ignored="false" />
     <file path="/user.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369085996850" ignored="false" />
     <file path="/seeds.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369248152032" ignored="false" />
     <file path="/20130520223525_create_users_projects_table.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369089459322" ignored="false" />
     <file path="/application.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369401505966" ignored="false" />
-    <file path="/Gemfile" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369420831651" ignored="false" />
+    <file path="/Gemfile" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369477848283" ignored="false" />
     <file path="/application_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369393675163" ignored="false" />
-    <file path="/artifacts_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369423802028" ignored="false" />
+    <file path="/artifacts_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369517747705" ignored="false" />
     <file path="/_form.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369395347227" ignored="false" />
-    <file path="/fragment.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369428119753" ignored="false" />
+    <file path="/fragment.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369517170093" ignored="false" />
     <file path="/session_store.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369176848302" ignored="false" />
     <file path="/projects_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369257606710" ignored="false" />
     <file path="/users_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369398362073" ignored="false" />
     <file path="/20130521231138_create_projects_users.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369177916166" ignored="false" />
-    <file path="/routes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369422625105" ignored="false" />
+    <file path="/routes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369516990775" ignored="false" />
     <file path="/select.js.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369237089322" ignored="false" />
     <file path="/20130522180837_remove_project_id_from_artifact_types.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369246260664" ignored="false" />
     <file path="/link_schemas_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369249151873" ignored="false" />
-    <file path="/index.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369425238469" ignored="false" />
+    <file path="/index.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369517133987" ignored="false" />
     <file path="/20130522195322_add_parent_to_change.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369252445178" ignored="false" />
     <file path="/20130522195453_add_parent_to_change.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369252509892" ignored="false" />
     <file path="/changes_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369320273670" ignored="false" />
-    <file path="/history.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369393932218" ignored="false" />
+    <file path="/history.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369481652520" ignored="false" />
     <file path="/devise.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369324320521" ignored="false" />
     <file path="/20130523155852_add_devise_to_users.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369324981654" ignored="false" />
     <file path="/new.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369393344630" ignored="false" />
@@ -55,9 +58,10 @@
     <file path="/attachment.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369427086640" ignored="false" />
     <file path="/file_uploader.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369424490729" ignored="false" />
     <file path="/attachments_controller.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369423593705" ignored="false" />
-    <file path="/show.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369428524511" ignored="false" />
+    <file path="/show.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369477924267" ignored="false" />
     <file path="/application.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369418479581" ignored="false" />
     <file path="/application.js" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369421139337" ignored="false" />
+    <file path="/links.html.erb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369517848599" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,19 +84,37 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/artifacts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="49" selection-start="806" selection-end="806" vertical-scroll-proportion="-9.807693">
+            <state line="95" column="9" selection-start="4190" selection-end="4190" vertical-scroll-proportion="-9.153846">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#td#4;n#tr#0;n#script#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/artifacts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="32" selection-start="321" selection-end="321" vertical-scroll-proportion="0.3733108">
+            <state line="31" column="91" selection-start="1482" selection-end="1482" vertical-scroll-proportion="-10.192307">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="artifacts_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/artifacts_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="45" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="links.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/artifacts/links.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="39" selection-start="654" selection-end="654" vertical-scroll-proportion="0.5533454">
               <folding />
             </state>
           </provider>
@@ -117,22 +139,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130524172348_create_attachments.rb" />
-        <option value="$PROJECT_DIR$/app/models/artifact.rb" />
-        <option value="$PROJECT_DIR$/app/models/project.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/uploaders/file_uploader.rb" />
-        <option value="$PROJECT_DIR$/app/views/artifacts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/attachment.rb" />
         <option value="$PROJECT_DIR$/app/controllers/attachments_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/artifacts/show.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/artifacts/history.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/artifacts/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/artifact.rb" />
+        <option value="$PROJECT_DIR$/app/models/link.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/artifacts/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/artifacts/links.html.erb" />
       </list>
     </option>
   </component>
@@ -237,6 +259,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exigentiam_rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exigentiam_rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exigentiam_rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exigentiam_rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -285,7 +335,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="artifacts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,6 +386,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exigentiam_rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exigentiam_rms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -574,10 +642,10 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="80" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="thin" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
@@ -755,7 +823,11 @@
       <created>1369428683574</created>
       <updated>1369428683574</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added attachments generated files">
+      <created>1369429953713</created>
+      <updated>1369429953713</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -824,7 +896,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added attachments management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added attachments generated files" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -862,124 +934,115 @@
     <MESSAGE value="fixed some issues in authentication system;&#10;administrator can now assign projects to users through multiselect list" />
     <MESSAGE value="added some files to CVS" />
     <MESSAGE value="Added attachments management" />
+    <MESSAGE value="Added attachments generated files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="25" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/routing/route_set.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="293" column="8" selection-start="9298" selection-end="9298" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="59" selection-start="2868" selection-end="2868" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="56" selection-start="289" selection-end="289" vertical-scroll-proportion="0.28977272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="2" selection-start="544" selection-end="544" vertical-scroll-proportion="0.3655303">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/artifacts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="13" selection-start="4038" selection-end="4038" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="547" selection-end="547" vertical-scroll-proportion="0.35416666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/jquery-fileupload-rails-0.4.1/vendor/assets/javascripts/jquery-fileupload/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="34" selection-start="87" selection-end="87" vertical-scroll-proportion="0.03219697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="28" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/jquery-fileupload-rails-0.4.1/vendor/assets/javascripts/jquery-fileupload/jquery.fileupload-fp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="4" selection-start="922" selection-end="922" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/attachments.js.coffee">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/artifacts.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/artifacts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="41" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.8466135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/uploaders/file_uploader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0">
+        <state line="13" column="15" selection-start="426" selection-end="426" vertical-scroll-proportion="0.2820946">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/attachment.rb">
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.09659091">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/attachments_controller.rb">
+    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="99" selection-start="817" selection-end="817" vertical-scroll-proportion="0.0">
+        <state line="13" column="63" selection-start="323" selection-end="323" vertical-scroll-proportion="0.24665178">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/artifacts/show.html.erb">
+    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/twitter-bootstrap-rails-2.2.6/vendor/toolkit/fontawesome-ie7.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="49" selection-start="806" selection-end="806" vertical-scroll-proportion="-9.807693">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#4;n#tr#0;n#script#1;n#!!top" expanded="true" />
-          </folding>
+        <state line="289" column="0" selection-start="12275" selection-end="12275" vertical-scroll-proportion="0.33333334">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/models/link_schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="321" selection-end="321" vertical-scroll-proportion="0.3733108">
+        <state line="3" column="49" selection-start="161" selection-end="161" vertical-scroll-proportion="0.09659091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="6" selection-start="314" selection-end="314" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/artifacts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="91" selection-start="1482" selection-end="1482" vertical-scroll-proportion="-10.192307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.6780303">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/artifact.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="17" selection-start="430" selection-end="445" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="4" selection-start="4491" selection-end="4491" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/link.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="49" selection-start="303" selection-end="303" vertical-scroll-proportion="0.07589286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/artifacts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="45" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/artifacts/links.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="39" selection-start="654" selection-end="654" vertical-scroll-proportion="0.5533454">
           <folding />
         </state>
       </provider>

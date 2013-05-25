@@ -1,5 +1,5 @@
 class ArtifactsController < ApplicationController
-  before_filter :get_list_dependencies, only: [:new, :edit]
+  before_filter :get_list_dependencies, only: [:new, :edit, :index]
   before_filter :authenticate_user!
 
   def get_list_dependencies
@@ -8,6 +8,41 @@ class ArtifactsController < ApplicationController
     @users = Project.find(session[:project_id]).users
     @projects = User.find(session[:user_id]).projects
     @artifacts = Artifact.find_all_by_project_id(session[:project_id])
+  end
+
+  def link
+    schema = LinkSchema.where('project_id = ? and from_type_id = ? and to_type_id = ?',
+                              session[:project_id], Artifact.find(params[:from_id]).artifact_type_id, Artifact.find(params[:id]).artifact_type).first
+    if schema == nil
+      redirect_to '/artifacts', flash: { error: 'Link between these artifacts is not allowed' }
+      return
+    end
+    result = Link.create(project: session[:project_id], from_artifact_id: params[:from_id], to_artifact_id: params[:id])
+    if result.errors.messages.empty?
+      redirect_to '/artifacts'
+    else
+      redirect_to '/artifacts', flash: { error: 'There is already a link between these two artifacts' }
+    end
+  end
+
+  def links
+    @artifact = Artifact.find(params[:id])
+
+    @incoming = []
+    @outcoming = []
+
+    @artifact.incoming_links.each do |incoming_link|
+      @incoming << Artifact.find(incoming_link.from_artifact_id)
+    end
+
+    @artifact.incoming_links.each do |outcoming_link|
+      @outcoming << Artifact.find(outcoming_link.to_artifact_id)
+    end
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @artifacts }
+    end
   end
 
   # GET /artifacts
@@ -54,7 +89,7 @@ class ArtifactsController < ApplicationController
   # POST /artifacts.json
   def create
     @artifact = Artifact.new(params[:artifact])
-    @artifact.project_id = session[:project_id]
+    @artifact.project = session[:project_id]
 
     change = copy_to_change(@artifact)
     change.version = 1
