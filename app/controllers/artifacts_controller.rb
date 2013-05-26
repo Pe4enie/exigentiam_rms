@@ -6,7 +6,7 @@ class ArtifactsController < ApplicationController
     @types = ArtifactType.all
     @statuses = ArtifactStatus.all
     @users = Project.find(session[:project_id]).users
-    @projects = User.find(session[:user_id]).projects
+    @projects = current_user.projects
     @artifacts = Artifact.find_all_by_project_id(session[:project_id])
   end
 
