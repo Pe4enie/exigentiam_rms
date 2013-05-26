@@ -23,13 +23,15 @@
         <td width="110px">
           <%= link_to artifact.identifier, artifact_path(artifact) %>
           <% if !artifact.outcoming_links.empty? %>
-            <a class="icon-caret-right pull-right" href="<%= links_artifact_path(artifact) %>"></a>
+            <a id="outcoming_<%= artifact.id %>" data-toggle="tooltip" title data-original-title="Have outcoming links" class="icon-caret-right pull-right" href="<%= links_artifact_path(artifact) %>"></a>
+            <script>$("#outcoming_<%= artifact.id %>").tooltip()</script>
           <% end %>
           <% if artifact.attachments.size != 0 %>
               <div class="icon-paper-clip pull-right"></div>
           <% end %>
           <% if !artifact.incoming_links.empty? %>
-              <a class="icon-caret-left pull-right" href="<%= links_artifact_path(artifact) %>"></a>
+              <a id="incoming_<%= artifact.id %>" data-toggle="tooltip" title data-original-title="Have incoming links" class="icon-caret-left pull-right" href="<%= links_artifact_path(artifact) %>"></a>
+              <script>$("#incoming_<%= artifact.id %>").tooltip()</script>
           <% end %>
           <br/>
           <div class="dropdown">

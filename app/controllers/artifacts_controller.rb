@@ -25,6 +25,20 @@ class ArtifactsController < ApplicationController
     end
   end
 
+  def remove_incoming
+    link = Link.where('project_id = ? and from_artifact_id = ? and to_artifact_id = ?', session[:project_id], params[:remove_id], params[:id]).first
+    link.destroy
+
+    redirect_to '/artifacts/' + params[:id].to_s + '/links'
+  end
+
+  def remove_outcoming
+    link = Link.where('project_id = ? and from_artifact_id = ? and to_artifact_id = ?', session[:project_id], params[:id], params[:remove_id]).first
+    link.destroy
+
+    redirect_to '/artifacts/' + params[:id].to_s + '/links'
+  end
+
   def links
     @artifact = Artifact.find(params[:id])
 
@@ -35,7 +49,7 @@ class ArtifactsController < ApplicationController
       @incoming << Artifact.find(incoming_link.from_artifact_id)
     end
 
-    @artifact.incoming_links.each do |outcoming_link|
+    @artifact.outcoming_links.each do |outcoming_link|
       @outcoming << Artifact.find(outcoming_link.to_artifact_id)
     end
 

@@ -23,6 +23,8 @@ ExigentiamRms::Application.routes.draw do
       get 'history'
       get 'link'
       get 'links'
+      get 'remove_incoming'
+      get 'remove_outcoming'
     end
   end
 

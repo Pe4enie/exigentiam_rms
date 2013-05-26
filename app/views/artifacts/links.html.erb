@@ -1,111 +1,48 @@
 <%- model_class = Artifact -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+  <h1>Links for <%= @artifact.identifier %></h1>
 </div>
 
+<h2>Incoming links</h2>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:identifier) %></th>
-      <th><%= model_class.human_attribute_name(:description) %></th>
+      <th width="100px"><%= model_class.human_attribute_name(:identifier) %></th>
+      <th width="450px"><%= model_class.human_attribute_name(:description) %></th>
       <th>Type</th>
       <th>Status</th>
       <th><%= model_class.human_attribute_name(:assignee_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th><%=t '.actions', :default => t('helpers.actions') %></th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
-    <% @artifacts.each do |artifact| %>
-      <% to_array = ArtifactType.where('id in (select to_type_id from link_schemas where from_type_id = ?)', artifact.artifact_type) %>
-      <% from_array = ArtifactType.where('id in (select from_type_id from link_schemas where to_type_id = ?)', artifact.artifact_type) %>
+    <% @incoming.each do |artifact| %>
+        <tr>
+          <td><%= link_to artifact.identifier, artifact_path(artifact) %></td>
+          <td><%= truncate(artifact.description, :length => 150, :omission => '...') %></td>
+          <td><%= ArtifactType.find(artifact.artifact_type_id).title %></td>
+          <td><%= ArtifactStatus.find(artifact.artifact_status_id).title %></td>
+          <td><%= User.find(artifact.assignee_id).name %></td>
+          <td><%=l artifact.created_at, format: :short %></td>
+          <td>
+            <a class="btn btn-mini btn-danger" href="/artifact/<%= @artifact.id %>/remove_incoming?remove_id=<%= artifact.id %>">Delete</a>
+          </td>
+        </tr>
+    <% end %>
+    <tr><td colspan="7"><h2 style="margin-left: -10px;">Outcoming links</h2></td></tr>
+    <% @outcoming.each do |artifact| %>
       <tr>
-        <td width="110px">
-          <%= link_to artifact.identifier, artifact_path(artifact) %>
-          <% if !artifact.outcoming_links.empty? %>
-            <a class="icon-caret-right pull-right" href="<%= links_artifact_path(artifact) %>"></a>
-          <% end %>
-          <% if artifact.attachments.size != 0 %>
-              <div class="icon-paper-clip pull-right"></div>
-          <% end %>
-          <% if !artifact.incoming_links.empty? %>
-              <a class="icon-caret-left pull-right" href="<%= links_artifact_path(artifact) %>"></a>
-          <% end %>
-          <br/>
-          <div class="dropdown">
-            <a class="dropdown-toggle btn btn-mini" id="dLabel3" role="button" data-toggle="dropdown" data-target="#" href="<%= artifacts_path %>">
-              Link
-              <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel3">
-              <li class="dropdown-submenu <%= 'disabled' if to_array.empty? %>">
-                <a tabindex="-1" href="#">to</a>
-                <% if !to_array.empty? %>
-                    <ul class="dropdown-menu">
-                      <% to_array.each do |type| %>
-                          <% type_artifacts = type.artifacts.where('project_id = ?', session[:project_id]) %>
-                          <li class="dropdown-submenu <%= 'disabled' if type_artifacts.empty? %>">
-                            <a tabindex="-1" href="#"><%= type.title %></a>
-                            <% if !type_artifacts.empty? %>
-                              <ul class="dropdown-menu">
-                                <% type.artifacts.where('project_id = ?', session[:project_id]).each do |type_artifact| %>
-                                    <li><a id="tooltip_<%= type_artifact.id %>" data-toggle="tooltip" title data-original-title="<%= truncate(type_artifact.description, :length => 150, :omission => '...') %>" href="/artifacts/<%= type_artifact.id %>/link?from_id=<%= artifact.id %>"><%= type_artifact.identifier %></a></li>
-                                    <script>$("#tooltip_<%= type_artifact.id %>").tooltip()</script>
-                                <% end %>
-                              </ul>
-                            <% end %>
-                          </li>
-                      <% end %>
-                    </ul>
-                <% end %>
-              </li>
-              <li class="dropdown-submenu <%= 'disabled' if from_array.empty? %>">
-                <a tabindex="-1" href="#">from</a>
-                <% if !from_array.empty? %>
-                    <ul class="dropdown-menu">
-                      <% from_array.each do |type| %>
-                          <% type_artifacts = type.artifacts.where('project_id = ?', session[:project_id]) %>
-                          <li class="dropdown-submenu <%= 'disabled' if type_artifacts.empty? %>">
-                            <a tabindex="-1" href="#"><%= type.title %></a>
-                            <% if !type_artifacts.empty? %>
-                              <ul class="dropdown-menu">
-                                <% type_artifacts.each do |type_artifact| %>
-                                    <li><a id="tooltip_<%= type_artifact.id %>" data-toggle="tooltip" title data-original-title="<%= truncate(type_artifact.description, :length => 150, :omission => '...') %>" href="/artifacts/<%= artifact.id %>/link?from_id=<%= type_artifact.id %>"><%= type_artifact.identifier %></a></li>
-                                    <script>$("#tooltip_<%= type_artifact.id %>").tooltip()</script>
-                                <% end %>
-                              </ul>
-                            <% end %>
-                          </li>
-                      <% end %>
-                    </ul>
-                <% end %>
-              </li>
-            </ul>
-          </div>
-        </td>
-        <td width="500px"><%= truncate(artifact.description, :length => 150, :omission => '...') %></td>
-        <td width="120px"><%= ArtifactType.find(artifact.artifact_type_id).title %></td>
+        <td><%= link_to artifact.identifier, artifact_path(artifact) %></td>
+        <td><%= truncate(artifact.description, :length => 150, :omission => '...') %></td>
+        <td><%= ArtifactType.find(artifact.artifact_type_id).title %></td>
         <td><%= ArtifactStatus.find(artifact.artifact_status_id).title %></td>
         <td><%= User.find(artifact.assignee_id).name %></td>
-        <td width="110px"><%=l artifact.created_at, format: :short %></td>
-
-        <td width="140px">
-
-          <%= link_to 'History', history_artifact_path(artifact), :class => 'btn btn-mini' %>
-          <%= link_to t('.edit', :default => t('helpers.links.edit')),
-                      edit_artifact_path(artifact), :class => 'btn btn-mini' %>
-          <%= link_to t('.destroy', :default => t('helpers.links.destroy')),
-                      artifact_path(artifact),
-                      :method => :delete,
-                      remote: true,
-                      :data => { :confirm => t('.confirm', :default => t('helpers.links.confirm', :default => 'Are you sure?')) },
-                      :class => 'btn btn-mini btn-danger' %>
+        <td><%=l artifact.created_at, format: :short %></td>
+        <td>
+          <a class="btn btn-mini btn-danger" href="/artifact/<%= @artifact.id %>/remove_outcoming?remove_id=<%= artifact.id %>">Delete</a>
         </td>
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
-
-<%= link_to t('.new', :default => t('helpers.links.new')),
-            new_artifact_path,
-            :class => 'btn btn-primary' %>
