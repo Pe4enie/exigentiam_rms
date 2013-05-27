@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35e85398-0baa-459d-a33e-c34c57d81259" name="Default" comment="Added links view;&#10;fixed some issues">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/artifacts_controller.rb" />
+    <list default="true" id="35e85398-0baa-459d-a33e-c34c57d81259" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exigentiam_rms.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369581167338" ignored="false" />
+    <file path="/Dummy.txt" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369691756444" ignored="false" />
     <file path="/20130520210152_create_changes.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369083919842" ignored="false" />
     <file path="/20130520205351_create_projects.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369084697292" ignored="false" />
     <file path="/artifact.rb" changelist="35e85398-0baa-459d-a33e-c34c57d81259" time="1369495160435" ignored="false" />
@@ -75,11 +74,8 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/artifacts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="9" selection-start="4190" selection-end="4190" vertical-scroll-proportion="-9.153846">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#3;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#td#4;n#tr#0;n#script#1;n#!!top" expanded="true" />
-              </folding>
+            <state line="95" column="9" selection-start="4190" selection-end="4190" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,16 +83,25 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/artifacts/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="39" selection-start="1957" selection-end="1957" vertical-scroll-proportion="-18.307692">
+            <state line="37" column="39" selection-start="1957" selection-end="1957" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="artifacts_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="artifacts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/artifacts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="0.35416666">
+            <state line="9" column="34" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/artifacts/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="57" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.44252872">
               <folding />
             </state>
           </provider>
@@ -105,10 +110,8 @@
       <file leaf-file-name="links.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/artifacts/links.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="44" selection-start="1937" selection-end="1937" vertical-scroll-proportion="-19.615385">
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="42" column="44" selection-start="1937" selection-end="1937" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -233,6 +236,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -433,21 +438,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="275" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="292" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="296" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="299" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="978" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="292" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="285" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -461,9 +464,8 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="Errors" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -577,6 +579,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -606,13 +615,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
@@ -867,20 +869,23 @@
       <created>1369570087007</created>
       <updated>1369570087007</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fixed 'no user on session' bug">
+      <created>1369581198652</created>
+      <updated>1369581198652</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2022412" sideWeight="0.6008677" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3991323" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20437567" sideWeight="0.6008677" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991323" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -889,6 +894,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -936,7 +942,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added links view;&#10;fixed some issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed 'no user on session' bug" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -950,7 +956,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Fixed all (i hope) relations in models and some errors in migrations" />
     <MESSAGE value="Added 'shortening' column to ArtifactType; filled seeds.rb to database initial population" />
     <MESSAGE value="Added 'shortening' column to ArtifactType" />
     <MESSAGE value="Added 'shortening' column to ArtifactType model (finally -_-); added test project in seeds.rb so that initial artifact types and statuses are for this project" />
@@ -975,6 +980,7 @@
     <MESSAGE value="Added attachments generated files" />
     <MESSAGE value="Implemented links between artifacts" />
     <MESSAGE value="Added links view;&#10;fixed some issues" />
+    <MESSAGE value="fixed 'no user on session' bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -982,86 +988,78 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.09659091">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/implicit_render.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="63" selection-start="323" selection-end="323" vertical-scroll-proportion="0.24665178">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/twitter-bootstrap-rails-2.2.6/vendor/toolkit/fontawesome-ie7.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="289" column="0" selection-start="12275" selection-end="12275" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.12/lib/active_support/notifications/instrumenter.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
+        <state line="21" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/rescue.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.6780303">
-          <folding />
-        </state>
+        <state line="31" column="0" selection-start="1117" selection-end="1117" vertical-scroll-proportion="0.6780303" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/link.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="49" selection-start="303" selection-end="303" vertical-scroll-proportion="0.07589286">
-          <folding />
-        </state>
+        <state line="4" column="49" selection-start="303" selection-end="303" vertical-scroll-proportion="0.07589286" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/project.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="2" selection-start="160" selection-end="160" vertical-scroll-proportion="0.14358108">
-          <folding />
-        </state>
+        <state line="5" column="2" selection-start="160" selection-end="160" vertical-scroll-proportion="0.14358108" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/link_schemas_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="62" selection-start="337" selection-end="337" vertical-scroll-proportion="0.3158784">
-          <folding />
-        </state>
+        <state line="11" column="62" selection-start="337" selection-end="337" vertical-scroll-proportion="0.3158784" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/link_schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="57" selection-start="219" selection-end="219" vertical-scroll-proportion="0.11486486">
-          <folding />
-        </state>
+        <state line="4" column="57" selection-start="219" selection-end="219" vertical-scroll-proportion="0.11486486" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/link_schemas/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="73" selection-start="636" selection-end="636" vertical-scroll-proportion="0.48056537">
-          <folding />
-        </state>
+        <state line="16" column="73" selection-start="636" selection-end="636" vertical-scroll-proportion="0.48056537" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="4" selection-start="5678" selection-end="5678" vertical-scroll-proportion="0.33277026">
-          <folding />
-        </state>
+        <state line="137" column="4" selection-start="5678" selection-end="5678" vertical-scroll-proportion="0.33277026" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/artifact.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="430" selection-end="445" vertical-scroll-proportion="0.3158784">
+        <state line="11" column="17" selection-start="430" selection-end="445" vertical-scroll-proportion="0.3158784" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/artifacts/links.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="44" selection-start="1937" selection-end="1937" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/artifacts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="39" selection-start="1957" selection-end="1957" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="18" selection-start="429" selection-end="429" vertical-scroll-proportion="0.48295453" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/artifacts/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/artifacts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="34" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1073,25 +1071,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/artifacts/links.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/artifacts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="44" selection-start="1937" selection-end="1937" vertical-scroll-proportion="-19.615385">
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/artifacts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="39" selection-start="1957" selection-end="1957" vertical-scroll-proportion="-18.307692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/artifacts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="0.35416666">
+        <state line="26" column="57" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.44252872">
           <folding />
         </state>
       </provider>
