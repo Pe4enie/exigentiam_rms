@@ -26,8 +26,12 @@ ExigentiamRms::Application.routes.draw do
       get 'remove_incoming'
       get 'remove_outcoming'
     end
+    collection do
+      get 'traceability'
+      get 'change_direction'
+      get 'remove_link'
+    end
   end
-
 
   resources :changes do
     collection do

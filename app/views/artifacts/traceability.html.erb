@@ -1,0 +1,67 @@
+<div class="page-header">
+  <h1>Traceability matrix</h1>
+</div>
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <td></td>
+      <% @artifacts.each do |artifact| %>
+        <td style="min-width: 80px; text-align: center;"><a id="top_tooltip_<%= artifact.id %>" data-toggle="tooltip" title data-original-title="<%= truncate(artifact.description, :length => 150, :omission => '...') %>"><%= artifact.identifier %></a></td>
+        <script>$("#top_tooltip_<%= artifact.id %>").tooltip()</script>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
+    <% @artifacts.each do |artifact| %>
+      <tr>
+        <td style="text-align: center; vertical-align: middle;"><a id="left_tooltip_<%= artifact.id %>" data-toggle="tooltip" title data-original-title="<%= truncate(artifact.description, :length => 150, :omission => '...') %>"><%= artifact.identifier %></a></td>
+        <script>$("#left_tooltip_<%= artifact.id %>").tooltip()</script>
+        <% @artifacts.each do |artifact_cell| %>
+          <% link_from = @links.detect{ |l| l.from_artifact_id == artifact.id && l.to_artifact_id == artifact_cell.id } %>
+          <% link_to = @links.detect{ |l| l.to_artifact_id == artifact.id && l.from_artifact_id == artifact_cell.id } %>
+          <% if artifact == artifact_cell %>
+            <td style="background-color: #f2dede;"></td>
+          <% else %>
+            <% if link_from %>
+              <td style="text-align: center;">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" id="dLabel_<%= artifact.id.to_s + '_' + artifact_cell.id.to_s %>" role="button" data-toggle="dropdown" data-target="#">
+                      <%= image_tag 'up_arrow.png' %>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel_<%= artifact.id.to_s + '_' + artifact_cell.id.to_s %>">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="/artifacts/remove_link?from_id=<%= artifact.id %>&to_id=<%= artifact_cell.id %>">Remove link</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="/artifacts/change_direction?from_id=<%= artifact.id %>&to_id=<%= artifact_cell.id %>">Change link direction</a></li>
+                    </ul>
+                </div>
+              </td>
+            <% elsif link_to %>
+              <td style="text-align: center;">
+                <div class="dropdown">
+                  <a class="dropdown-toggle" id="dLabel_<%= artifact.id.to_s + '_' + artifact_cell.id.to_s %>" role="button" data-toggle="dropdown" data-target="#">
+                    <%= image_tag 'left_arrow.png' %>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel_<%= artifact.id.to_s + '_' + artifact_cell.id.to_s %>">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/artifacts/remove_link?from_id=<%= artifact_cell.id %>&to_id=<%= artifact.id %>">Remove link</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/artifacts/change_direction?from_id=<%= artifact_cell.id %>&to_id=<%= artifact.id %>">Change link direction</a></li>
+                  </ul>
+                </div>
+              </td>
+            <% else %>
+              <td style="text-align: center; vertical-align: middle;">
+                <div class="dropdown">
+                  <a class="dropdown-toggle btn btn-mini" id="dLabel_<%= artifact.id.to_s + '_' + artifact_cell.id.to_s %>" role="button" data-toggle="dropdown" data-target="#">
+                    Create link
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel_<%= artifact.id.to_s + '_' + artifact_cell.id.to_s %>">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/artifacts/<%= artifact.id %>/link?from_id=<%= artifact_cell.id %>">from <%= artifact_cell.identifier %> to <%= artifact.identifier %></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="/artifacts/<%= artifact_cell.id %>/link?from_id=<%= artifact.id %>">from <%= artifact.identifier %> to <%= artifact_cell.identifier %></a></li>
+                  </ul>
+                </div>
+              </td>
+            <% end %>
+          <% end %>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

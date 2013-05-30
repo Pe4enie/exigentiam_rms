@@ -17,6 +17,7 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer'
 
+  gem 'twitter-bootstrap-rails'
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -24,7 +25,6 @@ gem 'jquery-rails'
 gem 'jquery-fileupload-rails'
 gem 'devise'
 gem 'carrierwave'
-gem 'twitter-bootstrap-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

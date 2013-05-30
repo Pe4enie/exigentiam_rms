@@ -10,18 +10,57 @@ class ArtifactsController < ApplicationController
     @artifacts = Artifact.find_all_by_project_id(session[:project_id])
   end
 
+  def traceability
+    session[:redirect] = '/artifacts/traceability'
+    @artifacts = Artifact.find_all_by_project_id(session[:project_id])
+    @links = Link.find_all_by_project_id(session[:project_id])
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @artifacts }
+    end
+  end
+
+  def change_direction
+    schema = LinkSchema.where('project_id = ? and from_type_id = ? and to_type_id = ?',
+                              session[:project_id], Artifact.find(params[:to_id]).artifact_type_id, Artifact.find(params[:from_id]).artifact_type).first
+
+    if schema == nil
+      redirect_to session[:redirect], flash: { error: 'Link between these artifacts is not allowed' }
+      return
+    end
+
+    result = Link.create(project: session[:project_id], from_artifact_id: params[:to_id], to_artifact_id: params[:from_id])
+    if result.errors.messages.empty?
+      link = Link.where('project_id = ? and from_artifact_id = ? and to_artifact_id = ?', session[:project_id], params[:from_id], params[:to_id]).first
+      link.destroy
+      redirect_to session[:redirect]
+    else
+      redirect_to session[:redirect], flash: { error: 'There is already a link between these two artifacts' }
+    end
+  end
+
+  def remove_link
+    link = Link.where('project_id = ? and from_artifact_id = ? and to_artifact_id = ?', session[:project_id], params[:from_id], params[:to_id]).first
+    link.destroy
+
+    redirect_to session[:redirect]
+  end
+
   def link
+    redirect = session[:redirect] ? session[:redirect] : '/artifacts'
+
     schema = LinkSchema.where('project_id = ? and from_type_id = ? and to_type_id = ?',
                               session[:project_id], Artifact.find(params[:from_id]).artifact_type_id, Artifact.find(params[:id]).artifact_type).first
     if schema == nil
-      redirect_to '/artifacts', flash: { error: 'Link between these artifacts is not allowed' }
+      redirect_to redirect, flash: { error: 'Link between these artifacts is not allowed' }
       return
     end
     result = Link.create(project: session[:project_id], from_artifact_id: params[:from_id], to_artifact_id: params[:id])
     if result.errors.messages.empty?
-      redirect_to '/artifacts'
+      redirect_to redirect
     else
-      redirect_to '/artifacts', flash: { error: 'There is already a link between these two artifacts' }
+      redirect_to redirect, flash: { error: 'There is already a link between these two artifacts' }
     end
   end
 
@@ -149,7 +188,7 @@ class ArtifactsController < ApplicationController
     change = Change.new
     change.project = artifact.project
     change.artifact = artifact
-    change.changer = User.find(session[:user_id])
+    change.changer = current_user
     change.artifact_type = artifact.artifact_type
     change.assignee = artifact.assignee
     change.artifact_status = artifact.artifact_status

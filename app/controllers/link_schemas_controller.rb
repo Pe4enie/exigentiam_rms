@@ -48,10 +48,11 @@ class LinkSchemasController < ApplicationController
   # POST /link_schemas.json
   def create
     @link_schema = LinkSchema.new(params[:link_schema])
+    @link_schema.project = Project.find(session[:project_id])
 
     respond_to do |format|
       if @link_schema.save
-        format.html { redirect_to @link_schema, notice: 'Link schema was successfully created.' }
+        format.html { redirect_to '/link_schemas', notice: 'Link schema was successfully created.' }
         format.json { render json: @link_schema, status: :created, location: @link_schema }
       else
         format.html { render action: "new" }
