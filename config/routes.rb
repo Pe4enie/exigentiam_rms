@@ -12,7 +12,13 @@ ExigentiamRms::Application.routes.draw do
   resources :artifact_types
 
 
-  resources :links
+  resources :links do
+    member do
+      get 'resolve_suspicion'
+    end
+  end
+
+  match 'suspicious_links' => 'links#suspicious_links', as: 'suspicious_links'
 
 
   resources :link_schemas

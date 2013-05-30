@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130524172348) do
+ActiveRecord::Schema.define(:version => 20130530162153) do
 
   create_table "artifact_statuses", :force => true do |t|
     t.string   "title"
@@ -107,8 +107,9 @@ ActiveRecord::Schema.define(:version => 20130524172348) do
     t.integer  "project_id"
     t.integer  "from_artifact_id"
     t.integer  "to_artifact_id"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",                          :null => false
+    t.datetime "updated_at",                          :null => false
+    t.boolean  "suspicious",       :default => false
   end
 
   add_index "links", ["from_artifact_id"], :name => "index_links_on_from_artifact_id"

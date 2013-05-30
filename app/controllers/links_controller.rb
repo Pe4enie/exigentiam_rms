@@ -1,4 +1,21 @@
 class LinksController < ApplicationController
+
+  def suspicious_links
+    @links = Link.where('project_id = ? and suspicious = 1', session[:project_id])
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @links }
+    end
+  end
+
+  def resolve_suspicion
+    link = Link.find(params[:id])
+    link.update_attribute(:suspicious, :false)
+
+    redirect_to '/suspicious_links'
+  end
+
   # GET /links
   # GET /links.json
   def index

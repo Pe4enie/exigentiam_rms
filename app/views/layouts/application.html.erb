@@ -43,7 +43,10 @@
                   </ul>
               </li>
               <li><%= link_to 'Artifacts', artifacts_path %></li>
-              <li><%= link_to 'Traceability View', traceability_artifacts_path %></li>
+              <li><%= link_to 'Traceability Matrix', traceability_artifacts_path %></li>
+              <% if !Link.where('project_id = ? and suspicious = 1', session[:project_id]).empty? %>
+                <li><%= link_to 'Suspicious Links', suspicious_links_path %></li>
+              <% end %>
               <% if Project.find(session[:project_id]).administrator == current_user %>
                 <li><%= link_to 'Link Schemas', link_schemas_path %></li>
                 <li><%= link_to 'Users', users_path %></li>
