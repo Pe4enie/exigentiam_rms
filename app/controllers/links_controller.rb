@@ -1,7 +1,7 @@
 class LinksController < ApplicationController
 
   def suspicious_links
-    @links = Link.where('project_id = ? and suspicious = 1', session[:project_id])
+    @links = Link.where('project_id = ? and suspicious = "t"', session[:project_id])
 
     respond_to do |format|
       format.html
@@ -13,7 +13,11 @@ class LinksController < ApplicationController
     link = Link.find(params[:id])
     link.update_attribute(:suspicious, :false)
 
-    redirect_to '/suspicious_links'
+    if !Link.where('project_id = ? and suspicious = "t"', session[:project_id]).empty?
+      redirect_to '/suspicious_links'
+    else
+      redirect_to '/artifacts'
+    end
   end
 
   # GET /links

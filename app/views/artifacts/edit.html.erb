@@ -3,3 +3,29 @@
   <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human %></h1>
 </div>
 <%= render :partial => 'form' %>
+
+<h3>The following artifacts can be affected after change</h3>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th><%= model_class.human_attribute_name(:identifier) %></th>
+    <th><%= model_class.human_attribute_name(:description) %></th>
+    <th>Type</th>
+    <th>Status</th>
+    <th><%= model_class.human_attribute_name(:assignee_id) %></th>
+    <th><%= model_class.human_attribute_name(:created_at) %></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @linked.each do |artifact| %>
+      <tr>
+        <td width="110px"><%= link_to artifact.identifier, artifact_path(artifact) %></td>
+        <td width="500px"><%= truncate(artifact.description, :length => 150, :omission => '...') %></td>
+        <td width="120px"><%= ArtifactType.find(artifact.artifact_type_id).title %></td>
+        <td><%= ArtifactStatus.find(artifact.artifact_status_id).title %></td>
+        <td><%= User.find(artifact.assignee_id).name %></td>
+        <td width="110px"><%=l artifact.created_at, format: :short %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

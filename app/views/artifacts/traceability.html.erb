@@ -13,7 +13,7 @@
   </thead>
   <tbody>
     <% @artifacts.each do |artifact| %>
-      <tr>
+      <tr height="50px">
         <td style="text-align: center; vertical-align: middle;"><a id="left_tooltip_<%= artifact.id %>" data-toggle="tooltip" title data-original-title="<%= truncate(artifact.description, :length => 150, :omission => '...') %>"><%= artifact.identifier %></a></td>
         <script>$("#left_tooltip_<%= artifact.id %>").tooltip()</script>
         <% @artifacts.each do |artifact_cell| %>

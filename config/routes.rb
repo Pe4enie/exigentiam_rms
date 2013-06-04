@@ -39,6 +39,8 @@ ExigentiamRms::Application.routes.draw do
     end
   end
 
+  match 'coverage_analysis' => 'artifacts#coverage_analysis', as: 'coverage_analysis'
+
   resources :changes do
     collection do
       get 'compare'

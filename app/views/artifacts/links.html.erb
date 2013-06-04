@@ -3,7 +3,6 @@
   <h1>Links for <%= @artifact.identifier %></h1>
 </div>
 
-<h2>Incoming links</h2>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -17,6 +16,8 @@
     </tr>
   </thead>
   <tbody>
+  <% if !@incoming.empty? %>
+    <tr><td colspan="7"><h2 style="margin-left: -10px;">Incoming links</h2></td></tr>
     <% @incoming.each do |artifact| %>
         <tr>
           <td><%= link_to artifact.identifier, artifact_path(artifact) %></td>
@@ -30,6 +31,8 @@
           </td>
         </tr>
     <% end %>
+  <% end %>
+  <% if !@outcoming.empty? %>
     <tr><td colspan="7"><h2 style="margin-left: -10px;">Outcoming links</h2></td></tr>
     <% @outcoming.each do |artifact| %>
       <tr>
@@ -43,6 +46,7 @@
           <a class="btn btn-mini btn-danger" href="/artifact/<%= @artifact.id %>/remove_outcoming?remove_id=<%= artifact.id %>">Delete</a>
         </td>
       </tr>
+    <% end %>
   <% end %>
   </tbody>
 </table>

@@ -93,7 +93,21 @@ class ArtifactsController < ApplicationController
     end
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html
+      format.json { render json: @artifacts }
+    end
+  end
+
+  def coverage_analysis
+    @uncovered = []
+
+    artifacts = Project.find(session[:project_id]).artifacts
+    artifacts.each do |artifact|
+      @uncovered << artifact if artifact.incoming_links.empty? && artifact.outcoming_links.empty?
+    end
+
+    respond_to do |format|
+      format.html
       format.json { render json: @artifacts }
     end
   end
@@ -136,6 +150,16 @@ class ArtifactsController < ApplicationController
   # GET /artifacts/1/edit
   def edit
     @artifact = Artifact.find(params[:id])
+
+    @linked = []
+
+    @artifact.incoming_links.each do |incoming_link|
+      @linked << Artifact.find(incoming_link.from_artifact_id)
+    end
+
+    @artifact.outcoming_links.each do |outcoming_link|
+      @linked << Artifact.find(outcoming_link.to_artifact_id)
+    end
   end
 
   # POST /artifacts
@@ -215,6 +239,19 @@ class ArtifactsController < ApplicationController
 
     if has_changes(previous, @artifact)
       @artifact.update_attribute(:identifier, @artifact.artifact_type.shortening + '-' + @artifact.id.to_s)
+
+      links = []
+      Link.find_all_by_from_artifact_id(@artifact.id).each do |l|
+        links.append l
+      end
+      Link.find_all_by_to_artifact_id(@artifact.id).each do |l|
+        links.append l
+      end
+
+      links.each do |link|
+        link.update_attribute('suspicious', 1)
+      end
+
       change = copy_to_change(@artifact)
       change.version = Change.find_last_by_artifact_id(params[:id]).version + 1
       change.save
